@@ -31,7 +31,7 @@ def fetch_url(url: str, params=None, extract_text=True) -> Union[str, BeautifulS
             content = session.get(url, params=params).content
     except Exception:
         logger.debug(f"cannot retrieve url content: {url}", exc_info=True)
-        return ""
+        return None
 
     soup = BeautifulSoup(content, "html.parser")
     if extract_text:
