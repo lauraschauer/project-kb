@@ -419,7 +419,9 @@ class CommitIsSecurityRelevant(Rule):
         self,
         candidate: Commit,
     ) -> bool:
-        return LLMService().classify_commit(candidate.diff)
+        return LLMService().classify_commit(
+            candidate.diff, candidate.repository, candidate.message
+        )
 
 
 RULES_PHASE_1: List[Rule] = [
