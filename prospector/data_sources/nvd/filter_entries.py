@@ -1,29 +1,40 @@
 import csv
 import datetime
 import json
+from typing import List
 
 import requests
 from versions_extraction import extract_version_ranges_cpe, process_ranges
 
+NVD_BASE_URL = "https://services.nvd.nist.gov/rest/json/cves/2.0?"
 
-def get_cves(d_time):
+
+def get_cves(days, date=datetime.datetime.now(), keywords: List[str] = []):
+    """Gets CVEs published in the last `days` days counting from `date`. Default for `date` is today.
+
+    Params:
+        days (int): The number of days before today to look for CVEs for.
+        date (): The date to start counting from.
+    """
+
     data = ""
-    # Set up the URL to retrieve the latest CVE entries from NVD
-    nvd_url = "https://services.nvd.nist.gov/rest/json/cves/2.0?"
 
     # calculate the date to retrieve new entries (%Y-%m-%dT%H:%M:%S.%f%2B01:00)
-    date_now = datetime.datetime.now()
-    start_date = (date_now - datetime.timedelta(days=d_time)).strftime(
+    date_now = date
+    start_date = (date_now - datetime.timedelta(days=days)).strftime(
         "%Y-%m-%dT%H:%M:%S"
     )
     end_date = date_now.strftime("%Y-%m-%dT%H:%M:%S")
 
-    nvd_url += f"lastModStartDate={start_date}&lastModEndDate={end_date}"
+    params = {
+        "pubStartDate": start_date,
+        "pubEndDate": end_date,
+        "keywordSearch": "".join(keywords),
+    }
 
     # Retrieve the data from NVD
     try:
-        print(nvd_url)
-        response = requests.get(nvd_url)
+        response = requests.get(NVD_BASE_URL, params=params)
     except Exception as e:
         print(str(e))
 
@@ -34,6 +45,23 @@ def get_cves(d_time):
         print("Error while trying to retrieve entries")
 
     return data
+
+
+def get_from_nvd(cve_id: str):
+    """Get an advisory from the NVD dtabase"""
+    try:
+        params = {"cveId": cve_id}
+
+        response = requests.get(NVD_BASE_URL, params=params)
+
+        if response.status_code == 200:
+            return json.loads(response.text)
+
+        else:
+            print("Error occured.")
+
+    except Exception as e:
+        print(f"Error occured: {e}")
 
 
 def get_cve_by_id(id):
@@ -78,26 +106,28 @@ def csv_to_json(csv_file_path):
 
 
 def find_matching_entries_test(data):
+    """Filters a list of CVEs by checking if their descriptions contain certain keywords and adds their version interval.
+    Returns a list of CVEs that contain at least one keyword. The returned list also contains the version interval information.
+    """
     with open("./data/project_metadata.json", "r") as f:
         match_list = json.load(f)
 
     filtered_cves = []
 
-    for vuln in data["vulnerabilities"]:
-        for data in match_list.values():
-            keywords = data["search keywords"]
-            for keyword in keywords:
-                if keyword in vuln["cve"]["descriptions"][0]["value"]:
-                    lst_version_ranges = extract_version_ranges_cpe(vuln["cve"])
-                    version = process_ranges(lst_version_ranges)
-                    filtered_cves.append(
-                        {
-                            "nvd_info": vuln,
-                            "repo_url": data["git"],
-                            "version_interval": version,
-                        }
-                    )
-                    print(vuln["cve"]["id"])
-                    break
+    # for vuln in data["vulnerabilities"]:
+    for d in match_list.values():
+        keywords = data["search keywords"]
+        for keyword in keywords:
+            if keyword in data["cve"]["descriptions"][0]["value"]:
+                lst_version_ranges = extract_version_ranges_cpe(data["cve"])
+                version = process_ranges(lst_version_ranges)
+                filtered_cves.append(
+                    {
+                        "nvd_info": data,
+                        "repo_url": d["git"],
+                        "version_interval": version,
+                    }
+                )
+                break
 
     return filtered_cves

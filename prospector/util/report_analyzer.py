@@ -69,3 +69,27 @@ def analyze_results(dataset_path: str):
             )
         except FileNotFoundError:
             results["not_analyzed"].append(cve[0])
+
+
+def analyze_commit_relevance_results(file_path: str):
+    with open(file_path, "r") as f:
+        data = json.loads(f.read())
+
+    analysis = {
+        "relevance": [],
+        "llm_rule_False": [],
+    }
+
+    for commit in data["commits"]:
+        analysis["relevance"].append(
+            {
+                commit["commit_id"]: sum(
+                    [rule["relevance"] for rule in commit["matched_rules"]]
+                )
+            }
+        )
+        if "COMMIT_IS_SECURITY_RELEVANT" not in commit["matched_rules"]:
+            analysis["llm_rule_False"].append([commit["commit_id"], commit["message"]])
+
+    print("analysed:")
+    print(analysis)

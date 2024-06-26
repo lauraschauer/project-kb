@@ -21,7 +21,7 @@ FIXED = [
 
 
 def extract_version_ranges_cpe(json_data):
-    # json_data = json.loads(json_data)
+    """Returns the version range from a CVE record, e.g. [11.0.0:11.0.16)."""
     version_ranges = []
     if "configurations" in json_data:
         for configuration in json_data["configurations"]:

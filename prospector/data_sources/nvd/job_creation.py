@@ -19,38 +19,34 @@ print("redis url: ", redis_url)
 print("redis url: ", backend)
 
 
-def run_prospector(vuln_id, repo_url, v_int):
+def run_prospector(vuln_id, repo_url, v_int, report_type: str):
     results, advisory_record = prospector(
         vulnerability_id=vuln_id,
         repository_url=repo_url,
-        version_interval=v_int,
         backend_address=backend,
     )
     generate_report(
         results,
         advisory_record,
-        "html",
+        report_type,
         f"data_sources/reports/{vuln_id}",
     )
 
     return results, advisory_record
 
 
-def create_prospector_job(entry):
-    # data = json.loads(entry)
-
-    id = entry["nvd_info"]["cve"]["id"]
-    repo = entry["repo_url"]
-    version = entry["version_interval"]
+def create_prospector_job(
+    cve_id: str, repository_url: str, version_interval="", report_type: str = "html"
+):
 
     with Connection(redis.from_url(redis_url)):
         queue = Queue()
 
         job = Job.create(
             run_prospector,
-            args=(id, repo, version),
+            args=(cve_id, repository_url, version_interval, report_type),
             description="prospector job",
-            id=id,
+            id=cve_id,
         )
         queue.enqueue_job(job)
 
