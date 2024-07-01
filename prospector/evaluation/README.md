@@ -52,6 +52,6 @@ All data files can be found in `data/`. The folder `raw` contains the files with
 This experiment tries to answer the following questions:
 
 1. Does the Commit Classification rule have an impact on Prospector's results?
-   2. Are the candidate commits ordered differently when applying the rule?
-   3. Are the candidate commits ordered better?
+   1. Are the candidate commits ordered differently when applying the rule?
+   2. Are the candidate commits ordered better?
 2. How often does the Commit Classification Rule output True/False?
