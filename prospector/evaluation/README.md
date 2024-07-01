@@ -1,9 +1,10 @@
 # Evaluation
 
-This folder contains any files related to evaluating Prospector. There are two types of files:
+This folder contains any files related to evaluating Prospector. There are three types of files:
 
-1. **Script Files**: To run Prospector on a batch of CVEs, or to obtain and save a batch of CVEs.
-2. **Data Files**: These contain either fetched CVE data or Prospector results.
+1. **General Script Files**: To run Prospector on a batch of CVEs, or to obtain and save a batch of CVEs.
+2. **Experiment-specific Script Files**: Are found in the experiments folders - there is a specific folder for each experiment.
+3. **Data Files**: These contain either fetched CVE data or Prospector results.
 
 ## File Structure
 
@@ -46,7 +47,7 @@ All data files can be found in `data/`. The folder `raw` contains the files with
 
 ## Experiments
 
-### 1. Impact of Commit Classification Rule
+### 1. Impact of Commit Classification Rule (`experiments/commit_classification`)
 
 This experiment tries to answer the following questions:
 
