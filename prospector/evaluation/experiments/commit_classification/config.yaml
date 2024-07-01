@@ -3,3 +3,7 @@ prospector_reports: "data_sources/reports/"
 
 # Where to write analysis results to
 analysis_results: "evaluation/data/results/llm_results_1.json"
+
+# Which files to compare to get insight on commit classification impact
+file1: "evaluation/data/results/no_llm_results_1.json"
+file2: "evaluation/data/results/llm_results_1.json"

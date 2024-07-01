@@ -37,8 +37,8 @@ def run_prospector(vuln_id, repo_url, v_int, report_type: str):
         repository_url=repo_url,
         version_interval=v_int,
         backend_address=backend,
-        # enabled_rules=[rule.id for rule in RULES_PHASE_1 + RULES_PHASE_2],
-        enabled_rules=[rule.id for rule in RULES_PHASE_1],
+        enabled_rules=[rule.id for rule in RULES_PHASE_1 + RULES_PHASE_2],
+        # enabled_rules=[rule.id for rule in RULES_PHASE_1],
     )
     generate_report(
         results,
