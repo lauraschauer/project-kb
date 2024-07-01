@@ -1,0 +1,7 @@
+# Where to save CVE data and which CVE data to process for dispatch_jobs.py
+cve_data: "evaluation/data/raw/multiple_cves.json"
+
+# Which rules to use in dispatch_jobs.py
+rules:
+  - "RULES_PHASE_1"
+  - "RULES_PHASE_2"

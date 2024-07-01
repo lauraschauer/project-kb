@@ -22,5 +22,5 @@ for cve in cves:
         report_type="json",
         version_interval=cve["version_interval"],
     )  # Creates .json files for each CVE in app/data_sources/reports
-    # if res["job_data"]["job_status"]:
-    #     reported_cves.append(cves["vulnerabilities"][0]["cve"]["id"])
+
+# At the end of running this file, wait until all jobs have finished before analysing anything.

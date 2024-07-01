@@ -1,13 +1,16 @@
 import json
 import os
 
-directory = "data_sources/reports/"
+from omegaconf import OmegaConf
 
+# FILEPATH_PROSPECTOR_REPORTS = "data_sources/reports/"
+config = OmegaConf.load("evaluation/configs/experiment1.yaml")
+print("hello")
 results = {"vulnerabilities": []}
 
-# Now analyse the reports
-for filename in os.listdir(directory):
-    filepath = directory + filename
+# Analyse each prospector report file in JSON format
+for filename in os.listdir(config.prospector_reports):
+    filepath = config.prospector_reports + filename
     with open(filepath, "r") as f:
         data = json.load(f)
 
@@ -19,7 +22,7 @@ for filename in os.listdir(directory):
         data["commits"][0]["repository"] if len(data["commits"]) > 0 else ""
     )
 
-    single_result = {
+    individual_result = {
         "repository_url": repository_url or "",
         cve_id: {
             "relevance": [],
@@ -32,7 +35,7 @@ for filename in os.listdir(directory):
         matched_llm_rule = "COMMIT_IS_SECURITY_RELEVANT" in [
             rule["id"] for rule in commit["matched_rules"]
         ]
-        single_result[cve_id]["relevance"].append(
+        individual_result[cve_id]["relevance"].append(
             {
                 "commit_hash": commit["commit_id"],
                 "relevance": sum(
@@ -49,10 +52,10 @@ for filename in os.listdir(directory):
         # ]:
         #     single_result[cve_id]["no_llm_rule_match"].append(commit["commit_id"])
 
-    results["vulnerabilities"].append(single_result)
+    results["vulnerabilities"].append(individual_result)
 
 
 # print(json.dumps(results))  # sanity check
-file = "evaluation/results/no_llm_results.json"
-with open(file, "w") as f:
+file = config.analysis_results
+with open(file, "w+") as f:
     json.dump(results, f)
