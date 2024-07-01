@@ -7,7 +7,9 @@ from rq.job import Job
 
 from core.prospector import prospector
 from core.report import generate_report
-from util.config_parser import parse_config_file
+from llm.llm_service import LLMService
+from rules.rules import RULES_PHASE_1, RULES_PHASE_2
+from util.config_parser import LLMServiceConfig, parse_config_file
 
 # get the redis server url
 config = parse_config_file()
@@ -20,10 +22,23 @@ print("redis url: ", backend)
 
 
 def run_prospector(vuln_id, repo_url, v_int, report_type: str):
+
+    config = LLMServiceConfig(
+        type="sap",
+        model_name="gpt-4",
+        temperature=0.0,
+        ai_core_sk="sk.json",
+        use_llm_repository_url=True,
+    )
+    LLMService(config)
+
     results, advisory_record = prospector(
         vulnerability_id=vuln_id,
         repository_url=repo_url,
+        version_interval=v_int,
         backend_address=backend,
+        # enabled_rules=[rule.id for rule in RULES_PHASE_1 + RULES_PHASE_2],
+        enabled_rules=[rule.id for rule in RULES_PHASE_1],
     )
     generate_report(
         results,
@@ -36,7 +51,7 @@ def run_prospector(vuln_id, repo_url, v_int, report_type: str):
 
 
 def create_prospector_job(
-    cve_id: str, repository_url: str, version_interval="", report_type: str = "html"
+    cve_id: str, repository_url: str, version_interval, report_type: str = "html"
 ):
 
     with Connection(redis.from_url(redis_url)):

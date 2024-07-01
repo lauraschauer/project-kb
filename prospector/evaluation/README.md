@@ -5,9 +5,13 @@ This folder contains any files related to evaluating Prospector. There are two t
 1. **Script Files**: To run Prospector on a batch of CVEs, or to obtain and save a batch of CVEs.
 2. **Data Files**: These contain either fetched CVE data or Prospector results.
 
-## Script Files
+## File Structure
 
-### data_interaction.py
+### Script Files
+
+There are found in `scripts/`.
+
+#### data_interaction.py
 
 This file contains the functions to fetch CVE data, and save the data to files or load CVE data from files. To fetch CVE data, it uses the functions given in filter_entries.py, which make the API calls to the NVD API.
 
@@ -16,7 +20,7 @@ This file contains the functions to fetch CVE data, and save the data to files o
 3. `save_multiple_cves()`: Saves all relevant CVE records from the last ten days to evaluation/cve_data/multiple_cves.json
 4. `load_multiple_cves()`: Loads and returns the JSON records of evaluation/cve_data/multiple_cves.json
 
-### job_creation.py
+#### job_creation.py
 
 This file contains functions to create and enqueue a Prospector job.
 
@@ -27,21 +31,26 @@ This file contains functions to create and enqueue a Prospector job.
    4. The report type
 2. `run_prospector()`: Gets called by the above function, and call itself `prospector()` and then `generate_report()` on the results of `prospector()`. Anything created in this function, will be available when `prospector()` is run, for example, the `LLMService` singleton.
 
-### dispatch_jobs.py
+#### dispatch_jobs.py
 
 This file ties the functionality of the previous two together. It optionally fetches CVE data using `data_interaction.py`. If the CVE data is already saved, it will load the saved data, otherwise, it will fetch new data.
-For each CVE in the loaded data, it creates a prospector job with report type "json" using `job_creation.py`. `job_creation.py` calls `prospector()`, which creates JSON reports in the backend docker container in `app/evaluation/llm_results.json`. This can be copied to the host machine using:
+For each CVE in the loaded data, it creates a prospector job with report type "json" using `job_creation.py`. `job_creation.py` calls `prospector()`, which produces the JSON reports used by `analyse.py` to gain insights.
 
-```bash
-docker cp <prospector_backend_1-ID>:/app/evaluation/llm_results.json evaluation/results
-```
-
-### analyse.py
+#### analyse.py
 
 This file takes the Prospector JSON reports as input and produces output files with the analysis of them. The output files containing the results are saved in `evaluation/results/`.
 
-## Data Files
+### Data Files
 
-The folder `cve_data` contains the files with CVE data fetched from the NVD API.
+All data files can be found in `data/`. The folder `raw` contains the files with CVE data fetched from the NVD API. The folder `results` contains the analysis results created by analysis scripts.
 
-The folder `results` contains the analysis results created by analysis scripts.
+## Experiments
+
+### 1. Impact of Commit Classification Rule
+
+This experiment tries to answer the following questions:
+
+1. Does the Commit Classification rule have an impact on Prospector's results?
+   2. Are the candidate commits ordered differently when applying the rule?
+   3. Are the candidate commits ordered better?
+2. How often does the Commit Classification Rule output True/False?

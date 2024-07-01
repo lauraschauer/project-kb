@@ -489,5 +489,15 @@
       "Flatpak",
       "flatpak"
     ]
+  },
+  "Olingo": {
+    "mailing_list_archives": "",
+    "jira_prefix": "",
+    "security_advisory_page": "",
+    "jira_link_template": "",
+    "git": "https://github.com/apache/olingo-odata4",
+    "search keywords": [
+      "Apache"
+    ]
   }
 }

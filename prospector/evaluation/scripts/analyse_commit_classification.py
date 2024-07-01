@@ -53,6 +53,6 @@ for filename in os.listdir(directory):
 
 
 # print(json.dumps(results))  # sanity check
-file = "evaluation/llm_results.json"
+file = "evaluation/results/no_llm_results.json"
 with open(file, "w") as f:
     json.dump(results, f)

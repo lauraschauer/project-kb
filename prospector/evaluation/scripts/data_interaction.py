@@ -7,9 +7,8 @@ from data_sources.nvd.filter_entries import (
     get_cves,
 )
 
-
-FILEPATH_SINGLE_CVE = "evaluation/single_cve.json"
-FILEPATH_MULTIPLE_CVES = "evaluation/multiple_cves.json"
+FILEPATH_SINGLE_CVE = "evaluation/data/raw/single_cve.json"
+FILEPATH_MULTIPLE_CVES = "evaluation/data/raw/multiple_cves.json"
 
 
 def save_single_cve():

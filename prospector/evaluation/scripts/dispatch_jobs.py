@@ -1,16 +1,5 @@
-import json
-from datetime import datetime
-
 from data_sources.nvd.job_creation import create_prospector_job
-from evaluation.data_interaction import (
-    load_multiple_cves,
-    load_single_cve,
-    save_multiple_cves,
-    save_single_cve,
-)
-from llm.llm_service import LLMService
-from util.config_parser import LLMServiceConfig
-from util.report_analyzer import analyze_commit_relevance_results
+from evaluation.scripts.data_interaction import load_multiple_cves, load_single_cve
 
 # # Save CVE Data
 # save_single_cve()
@@ -24,16 +13,6 @@ print(f"Loaded {len(cves)} CVEs.")
 for cve in cves:
     print(cve["nvd_info"]["cve"]["id"])
     # print(cve)
-
-# Create the LLM Service outside, since this only calls prospector()
-config = LLMServiceConfig(
-    type="sap",
-    model_name="gpt-4",
-    temperature=0.0,
-    ai_core_sk="sk.json",
-    use_llm_repository_url=True,
-)
-LLMService(config=config)
 
 # Send them to Prospector to run & save results to data_source/reports/<cve_id>
 for cve in cves:

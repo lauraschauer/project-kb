@@ -2,8 +2,6 @@ import re
 from abc import abstractmethod
 from typing import List, Tuple
 
-import requests
-
 from datamodel.advisory import AdvisoryRecord
 from datamodel.commit import Commit, apply_ranking
 from llm.llm_service import LLMService
@@ -11,7 +9,7 @@ from rules.helpers import extract_security_keywords
 from stats.execution import Counter, execution_statistics
 from util.lsh import build_lsh_index, decode_minhash
 
-MAX_COMMITS_FOR_LLM_RULES = 1
+MAX_COMMITS_FOR_LLM_RULES = 10
 
 
 rule_statistics = execution_statistics.sub_collection("rules")

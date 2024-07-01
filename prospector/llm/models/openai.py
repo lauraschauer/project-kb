@@ -42,13 +42,20 @@ class OpenAI(LLM):
             "temperature": self.temperature,
         }
 
-        response = requests.post(endpoint, headers=headers, json=data)
+        try:
+            response = requests.post(endpoint, headers=headers, json=data)
 
-        if not response.status_code == 200:
-            logger.error(
-                f"Invalid response from AI Core API with error code {response.status_code}"
-            )
+        except requests.exceptions.RequestException as e:
+            logger.error(f"Invalid response from AI Core API with: {e}")
             raise Exception("Invalid response from AI Core API.")
+
+        if (
+            response.status_code == 400 and response.reason == "Bad Request"
+        ):  # means that token length has been exceeded
+            return "False"
+        if response.status_code != 200:
+            logger.error("The response from AI Core did not have status code 200.")
+            raise Exception("AI Core response status code != 200.")
 
         return self.parse(response.json())
 
