@@ -53,25 +53,56 @@ class LLMService(metaclass=Singleton):
         Raises:
             ValueError if advisory information cannot be obtained or there is an error in the model invocation.
         """
+
+        def parse_url_helper(response: str) -> str:
+            """This functions parses the URL from the LLM response (as sometimes the delimiters get returned). It also
+            validates the URL and returns it, otherwise returns None.
+            """
+            # delimiters are often returned by the LLM, remove them, if the case
+            pattern = r"<output>\s*(https?://[^\s]+)\s*</output>"
+            match = re.search(pattern, response)
+            if match and validators.url(match.group(1)):
+                return match.group(1)
+            else:
+                return None
+
         try:
             chain = prompt_best_guess | self.model | StrOutputParser()
 
-            url = chain.invoke(
-                {
-                    "description": advisory_description,
-                    "references": advisory_references,
-                }
-            )
-            logger.info(f"LLM returned the following URL: {url}")
+            try:
+                response = chain.invoke(
+                    {
+                        "description": advisory_description,
+                        "references": advisory_references,
+                    }
+                )
+                url = parse_url_helper(response)
+                if url is None:
+                    raise ValueError(f"LLM didn't return valid URL: {response}.")
 
-            # delimiters are often returned by the LLM, remove them, if the case
-            pattern = r"<output>\s*(https?://[^\s]+)\s*</output>"
-            match = re.search(pattern, url)
-            if match:
-                return match.group(1)
+                logger.info(f"LLM returned the following URL: {url}")
 
-            if not validators.url(url):
-                raise TypeError(f"LLM returned invalid URL: {url}")
+            except HTTPError as e:
+                # If status code is 400, prompt was too long, therefore retry with truncated version
+                if e.response.status_code == 400:
+                    logger.warning("Retrying with shorter prompt.")
+
+                    response = chain.invoke(
+                        {
+                            "description": advisory_description,
+                            "references": {
+                                k: v for k, v in advisory_references.items() if v > 1
+                            },
+                        }
+                    )
+                    url = parse_url_helper(response)
+                    if url is None:
+                        raise ValueError(f"LLM didn't return valid URL: {response}.")
+
+                    logger.info(f"LLM returned the following URL: {url}")
+
+                else:
+                    raise e
 
         except Exception as e:
             raise RuntimeError(f"Prompt-model chain could not be invoked: {e}")
