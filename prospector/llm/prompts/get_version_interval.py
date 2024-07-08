@@ -20,4 +20,6 @@ prompt = FewShotPromptTemplate(
     example_prompt=examples_formatted,
     suffix="""Here is the CVE information:
     The CVE's description: {description}""",
+    input_variables=["description"],
+    metadata={"name": "Version Interval Prompt"},
 )
