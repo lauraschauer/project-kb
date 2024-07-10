@@ -135,7 +135,9 @@ def prospector(  # noqa: C901
             advisory_record.has_fixing_commit = True
 
     if len(candidates) == 0:
-        if version_interval and len(version_interval) > 0:
+        if (
+            version_interval and len(version_interval) > 0
+        ):  # LASCHA: This contains whatever the user input into the CL
             prev_tag, next_tag = get_possible_tags(tags, version_interval)
             if prev_tag == "" and next_tag == "":
                 logger.info("Tag mismatch")
