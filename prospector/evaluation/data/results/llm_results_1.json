@@ -1,0 +1,364 @@
+{
+    "vulnerabilities": [
+        {
+            "repository_url": "https://github.com/jenkinsci/jenkins",
+            "CVE-2024-39458": {
+                "relevance": [
+                    {
+                        "commit_hash": "82a37a7f1e3a4eb9e8b44ac0696496967a72de84",
+                        "relevance": 46,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "4761c15de9561a584102056558eff3ce4819aa6f",
+                        "relevance": 14,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "144e6b1a98fd23cac66f393a0f6c026865357645",
+                        "relevance": 14,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "bda046a56f85eb0dddf66834054dbc19bbb5359c",
+                        "relevance": 14,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "15272668146027ed04342f58d1f7f03d3088e13a",
+                        "relevance": 14,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "b87adb7e812098695386a640d665ef1e8cee6b72",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ad571f8dec181369de350432cbdaafcf1d01fa47",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "b52201b020400594c2999188f19f0b1ff0f9063c",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "e7f3e23342819b081e2451cb46fa0abe28e7e04b",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "735c1394699790a3c3814d223140222df2ed95c2",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "",
+            "CVE-2024-34580": {
+                "relevance": [],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2024-29868": {
+                "relevance": [
+                    {
+                        "commit_hash": "ea4109a5886ec78b68ec4980a8597e17b7f4e927",
+                        "relevance": 36,
+                        "matched_llm_rule": "yes"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/jenkinsci/jenkins",
+            "CVE-2024-39459": {
+                "relevance": [
+                    {
+                        "commit_hash": "0117bf3e34ac08a91bea14f09e4b2fd3679ce8ca",
+                        "relevance": 50,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "b87adb7e812098695386a640d665ef1e8cee6b72",
+                        "relevance": 20,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "3633ce374e65a3526bff00b4a4490088e0f2c9e2",
+                        "relevance": 14,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "654cfd47d395ab0a5c5b2e626d869ca90dcdaa61",
+                        "relevance": 14,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5200591ad81e37703c5809614b041178afed0e82",
+                        "relevance": 14,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5af668dd2176a7938dc5e0f843eafbd0fd9580fd",
+                        "relevance": 14,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "bc1c2555a574ed0f07b1d40c055a442543a53479",
+                        "relevance": 14,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "dec756a7d1aff47db8fd956fd810ac2ad14f2af3",
+                        "relevance": 14,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "735c1394699790a3c3814d223140222df2ed95c2",
+                        "relevance": 14,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "115f179e4896ba5c87e49918892aa8571c0bd6df",
+                        "relevance": 14,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/commons-fileupload",
+            "CVE-2024-35527": {
+                "relevance": [
+                    {
+                        "commit_hash": "609bae87287e270f856c8b921fd29424a039ec18",
+                        "relevance": 50,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "c1e96b332d2476c195791eadb7af96497f9e25c2",
+                        "relevance": 50,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "4d20b4a3a790337eab1e3c33fe2f482e1c5f53aa",
+                        "relevance": 50,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "1d890b7bda08fb67c5c7a7248c107124db00cb5e",
+                        "relevance": 50,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "c3ad4d3cb2053d3249f9b44eebce98aac2c752ea",
+                        "relevance": 50,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "000eb6f7e41822aa314eacd39e02bc6057e7d7b0",
+                        "relevance": 50,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "aee4609272766975ab3c12e1364b90206865639a",
+                        "relevance": 20,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "70e442b6615e6dbdb2c5331f01858c26cc046db2",
+                        "relevance": 20,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "496bca4ddce260cfa4c82232956b1fd0ad327b33",
+                        "relevance": 20,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "370556314d805e30b21593d0f495416f21ef7dbb",
+                        "relevance": 18,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "",
+            "CVE-2024-34693": {
+                "relevance": [],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2024-27136": {
+                "relevance": [
+                    {
+                        "commit_hash": "1575ab7089b3361b842550a8d583aba3aa674760",
+                        "relevance": 32,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "0f190648bd318b39efd8dac6b488928f11bb3527",
+                        "relevance": 32,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "ea4109a5886ec78b68ec4980a8597e17b7f4e927",
+                        "relevance": 32,
+                        "matched_llm_rule": "yes"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/jenkinsci/jenkins",
+            "CVE-2024-39460": {
+                "relevance": [
+                    {
+                        "commit_hash": "7bbeba44b7f47a01f955c553128f2fb6febd4188",
+                        "relevance": 50,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "82a37a7f1e3a4eb9e8b44ac0696496967a72de84",
+                        "relevance": 46,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "b87adb7e812098695386a640d665ef1e8cee6b72",
+                        "relevance": 20,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5089ad5e5962d22294d48d57e5cccc68b26c5236",
+                        "relevance": 18,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "92ac1d88375c373aeccd7342af98ddda307f4a79",
+                        "relevance": 18,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "c0c19997c294286a499906bf0ffc42eafb4882e7",
+                        "relevance": 18,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "d99b83b1271be5f1a694fad6fe82b4874c2113c9",
+                        "relevance": 18,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "afaf96ebc31e2594c47596d9a7c27bfecaa225e5",
+                        "relevance": 18,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "4b96f40ccfbe79d8242489d9e159de0f98a32c8c",
+                        "relevance": 14,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "94f715407c494d4c0efefd0bd8324d73f97904c7",
+                        "relevance": 14,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "",
+            "CVE-2024-38379": {
+                "relevance": [],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2024-32030": {
+                "relevance": [
+                    {
+                        "commit_hash": "ea4109a5886ec78b68ec4980a8597e17b7f4e927",
+                        "relevance": 36,
+                        "matched_llm_rule": "yes"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/cloudfoundry/uaa",
+            "CVE-2024-22263": {
+                "relevance": [
+                    {
+                        "commit_hash": "59f229d424193d0a986d101b43034845146f6509",
+                        "relevance": 46,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "4cc1209df77a603137e81d46b9b715deb8f3cc4f",
+                        "relevance": 46,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "09b8e0d3ab2a2d9842a3c0d0891566fcd97ae137",
+                        "relevance": 44,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "f9b4586da1a41fba2cc9eda3a8d19175f277f24f",
+                        "relevance": 44,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "2cefee5fae03a15ba82f5e35c7d6b11422c22728",
+                        "relevance": 42,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "46f1ae4b55e9e5a9fc2e6af5101a6d869ddca661",
+                        "relevance": 42,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "f5c389039918a04f15d1e3ee95eb9d58d4e6f083",
+                        "relevance": 14,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "d10922a8f606b7d4ed8a7eb6bc585d9226e70f9e",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "3417acf8b389e3aeea0912786748b297f48360d0",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "eec74b680db26a0c949125bcacb2827daeef0c83",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        }
+    ]
+}

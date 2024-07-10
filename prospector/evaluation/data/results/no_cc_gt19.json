@@ -1,0 +1,2122 @@
+{
+    "vulnerabilities": {
+        "CVE-2019-1003024": {
+            "commits": [
+                {
+                    "commit_hash": "3228c88e84f0b2f24845b6466cae35617e082059",
+                    "relevance": 84,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "841e4f9654435d391479f1ef04fb1550e982c5a0",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "ffc50e2d70305ea4de5e1b956405f71d100325e0",
+                    "relevance": 2,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "8bd2c37bf915ea1d971411e93feb09407a23705f",
+                    "relevance": 2,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-10088": {
+            "commits": [
+                {
+                    "commit_hash": "426be73b9e7500fa3d441231fa4e473de34743f6",
+                    "relevance": 86,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "429d026aae6c326d3fd024580903f8cf34bb90da",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "06e734b3cfb192b96581338281c0373ef385d3cf",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "5b686a9c737e182463307df1b49aa39e359491c2",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "614c4c2c9ceda24664edd3e27be1312dd60d6d38",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "5584914374dc48537a91cd9ae6251ae67b50c62e",
+                    "relevance": 2,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "67d24a768b941c3b5b8663e8edf3294a95b4a3f7",
+                    "relevance": 2,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "9a8ef5e7844df2569494b27f51e28047a5596018",
+                    "relevance": 2,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-1020012": {
+            "commits": [
+                {
+                    "commit_hash": "8709daf698ea69b59268cb66f0f7cee75b52daa5",
+                    "relevance": 72,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "7fc0d45b893782f917237a6ceb30c8c966538c4f",
+                    "relevance": 18,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "559096f1c27caa0d7e62b80427894f3bee15624a",
+                    "relevance": 18,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "fe2e95622f69ca8bd5c41ac0ea550f98ebcd4a91",
+                    "relevance": 18,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "7590ee9799d31ef958049315a90fe331d793131e",
+                    "relevance": 14,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "7a080478b518f2c9dba94db636af0bf374d52c22",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "7801b7d9ab1258eae7d60ee725bb7d19a53c4093",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "38756421d19835a4392d3f924afc3d7e1301213d",
+                    "relevance": 6,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "922251a398dd6fd7de2048574f45e32efc7ed864",
+                    "relevance": 6,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "366e12193e63aca13100235ba6b39ac960900179",
+                    "relevance": 6,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-10093": {
+            "commits": [
+                {
+                    "commit_hash": "81c21ab0aac6b3e4102a1a8906c8c7eab6f96dae",
+                    "relevance": 64,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "c21ba30e2b8bf3b9482c833cba4b150a7e3758a7",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "f8525a9bc70896a3e3aa5be9101754c373ac798d",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "34707b00b8f54bdcd9097613af23b1a754fc0a70",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "72fa7951edb1a0dc87daeb82f9b1db7a1e80a253",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "a8ccfa1c70f4f1e1bfcd19abf1b0e26843e93815",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "8d386f827eb31e7f1cb189ce942c67a84a0c6bdc",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "03fa48a887262a72146e6227da4b5eff8c6f6024",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "86325105ab206dca88d076dc865fcb17404c4531",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "620134b90b72632fee486ba3aa5b25ff6b271d22",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-10087": {
+            "commits": [
+                {
+                    "commit_hash": "fbca81686104b50909a5a71b63ad476e39c59d56",
+                    "relevance": 30,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "60a9cb84ce36a0392fa5a01afcf28c11857c2f9e",
+                    "relevance": 30,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "4c4b8bf2490f7d09228120507453e49ebded6b5b",
+                    "relevance": 26,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "874c7e89201b50d0eb992ab42a39966767836e33",
+                    "relevance": 26,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "e8dd3526bedd5cd59380e67f9ad604933b36a9b3",
+                    "relevance": 24,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "59881d4c80c3c686cce582714ef6ff31956502ad",
+                    "relevance": 22,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "46cd981dfb431730da3f9249f5db858aacf11e52",
+                    "relevance": 18,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "edff448e1b6f5fd35aea2d72f88e3c7a88741c0a",
+                    "relevance": 14,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "87c89f0405d6b31fc165358ce5d5bc4536e32a8a",
+                    "relevance": 14,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "34df8c3b2e5bec0ec1e814bd2ea41667dcddefbf",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-10241": {
+            "commits": [
+                {
+                    "commit_hash": "ca77bd384a2970cabbbdab25cf6251c6fb76cd21",
+                    "relevance": 98,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "1532eba61d2276b2ed665719ce87f148e4a976da",
+                    "relevance": 74,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "31b0de2285c3355c10cf8db2c893e6bb7170d18f",
+                    "relevance": 70,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "b929f5c2db9faae0164d94a33f9ec919c78e7673",
+                    "relevance": 66,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "eaada1aa385a64020e1b3a70ee63f461253f4b7f",
+                    "relevance": 20,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "04c994712c0b29824633598cfe0bf709f3b96f09",
+                    "relevance": 16,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "3d028ab2ca76086a742bac7409a3620e81ec4791",
+                    "relevance": 16,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "b6809f555538344b4cccb2043048046269754102",
+                    "relevance": 14,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "73f79751892b535fff906a6ce9437e8d9a6ca01f",
+                    "relevance": 14,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "0efa519553c9d1398c1f5d438b093e5ebf9adad6",
+                    "relevance": 14,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-0200": {
+            "commits": [
+                {
+                    "commit_hash": "8bd6bd4206bc0855b162e0a2bbeb6c8db2fdda22",
+                    "relevance": 28,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "19624396396fc09d0dbc55dbdbfe63b3dad130e0",
+                    "relevance": 26,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "ae14be5dffcf89b84c7d3eef5346d3b3d3ca75fc",
+                    "relevance": 26,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "bab681e4b6f5a5cc1875d8ca850bba7b793e42b5",
+                    "relevance": 26,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "c80aceab29fc8c6c835c0d83554286bbe2ed8e36",
+                    "relevance": 24,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "ce967f5dcea22c06b52b8d707f9f30c7365135da",
+                    "relevance": 22,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "c862a92b650fbb9bcc5665fdc03e652f3c54fc0c",
+                    "relevance": 22,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "339a57f6faf0edad685e9d72be105ca76d8ac9bb",
+                    "relevance": 22,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "9d869019c40fddc5f8edad1a2544cf1869b765a9",
+                    "relevance": 22,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "e1d8e2fd84123cc518b82a4f7c4cd5fd46244d96",
+                    "relevance": 22,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-10242": {
+            "commits": [
+                {
+                    "commit_hash": "3c58b4ffe44b8d9eab1bc043f1b138398eb08077",
+                    "relevance": 42,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "15e5640a237912510cdfbbfd083eb7bbb7bdf30e",
+                    "relevance": 22,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "370357911c4f5415d594e97aa886e9f66d8a4730",
+                    "relevance": 12,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "0f10cc9cabcfeeeae9e04a59ca7128d375117dac",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "c42f4374320b36b72784079bee9ff1aa2b61a108",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "ff90167c5d7afb6d4cfc47de30d282377d7ea2f6",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "6261ffdbc2b3fc3e4874ae5369e8699f4d8a406a",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "06406903e6c44b4a0eb2e6b309560fabc13a2daf",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "0449786a1d51878eb945be562d34680cf9a58370",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "3a98650d83e53c97a03bc1490f3d14b6bc42aa67",
+                    "relevance": 6,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-1010083": {
+            "commits": [
+                {
+                    "commit_hash": "ab4142215d836b0298fc47fa1e4b75408b9c37a0",
+                    "relevance": 82,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "b178e89e4456e777b1a7ac6d7199052d0dfdbbbe",
+                    "relevance": 34,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "465b48ed4e4af52493df1febe4687f53032a5e0a",
+                    "relevance": 34,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "fc6a1d9354124690e632323d46ee35c3b8c9c8d2",
+                    "relevance": 16,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "49a38ed9995c5fa8fd07fde732845cbc08e890b0",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "1ed756a5238f38163cd04b152975a7d4ea945c7e",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "eaedb9320c7aad581daa05f1510b64393c082dbb",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "171eb28c950969260863cacefa2f08d1590ce839",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "2411707492d59eff68a3cf6d306eed91fceb6344",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "fce1885f7614c60c7cd8e4a4eadc5b99fe036264",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-10071": {
+            "commits": [
+                {
+                    "commit_hash": "d3928ad44714b949d247af2652c84dae3c27e1b1",
+                    "relevance": 18,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "709d282bfc626ce55cde07cbf909c0b86c2b4bcb",
+                    "relevance": 14,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "08b03f47676ee10b827ae65f81c50a8a3e244e94",
+                    "relevance": 12,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "364ea6346baaa02b55bbd04ed52379a3f3f0f074",
+                    "relevance": 12,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "8a2956ba75536942d4b8266852e7425eedfbb8e1",
+                    "relevance": 12,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "81c27804358d922e60446d6641a1f855c45eaa6f",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "65a91b1d1ee63a2fa4b422ac019a7c628c0a7e23",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "883f6a78fdf6bf801221eedab74d937a3cfd4acd",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "f8f927a34c163bbad09e97be607c1147b0a0d986",
+                    "relevance": 2,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "542950fc0266e8f9be1aacb5d6ba92146ae20f1b",
+                    "relevance": 0,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-1000007": {
+            "commits": [
+                {
+                    "commit_hash": "29ff0838a40f58efe30a4bbcea95aa8dab7da475",
+                    "relevance": 88,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "f151f920f439d97d4103fc11057ed6dc34fe98be",
+                    "relevance": 84,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "640fbb613d234502b0bd7bf147da6baeebec9a39",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "121d048b8225edd76079bfced3b820b2b95496ac",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "e6f1506d6b374fc5ca7bd3eb0a0f1a06bf2d3b41",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "bde3687d12ca1999bb6f913a9e81e23ec0fb5da8",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "409642974b060cad2fbbb4b86b885ef22d70ecbf",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "ca904fb61228791b20f3d089d6b3dd5dbe78a389",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "32a8582fdb08d24b79fa413643403dadc6691498",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "587efb3785b61a098e6c5f728e536ed2e8706d08",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-0911": {
+            "commits": [
+                {
+                    "commit_hash": "9a13cc6c1069be9ef9ff2a3f243446c723c20391",
+                    "relevance": 2,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-0225": {
+            "commits": [
+                {
+                    "commit_hash": "9e6e1e18a73c109795550912949303a69e1f78c1",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "e3f137ebd4a544b89f24ce5d2bee517bba9ca42d",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "f333843dba0c778da82f3ba25050acba59b9861c",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "8c494933d0d70f58f8ba724048f4523a7344a493",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "609c5c4c9533974dfb17bd304c246ca5a9ae81df",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "70dc3280c2d1f0d4085dba0da6587b57d96fd0e0",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "728fba0d0a2f96744e495621c86d470f5ab141e6",
+                    "relevance": 6,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "041c2216009d6942448918182cf8c7ab72e98d8b",
+                    "relevance": 6,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "3d0444833a4473fb55d86f88f4dafad5645596f9",
+                    "relevance": 6,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "374ec0b1b1bb2ab1fad97135446452ffb069f399",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-10202": {
+            "commits": [
+                {
+                    "commit_hash": "efc3c0d02f4743dbaa6d1b9c466772a2f13d966b",
+                    "relevance": 22,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "61ffa3aaa7dfefdbe1d36c263cef05ea81322a2b",
+                    "relevance": 22,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "03dd8cd360fa44588820054886bb2526706a6416",
+                    "relevance": 22,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "dda513bd7251b4f32b7b60b1c13740e3b5a43024",
+                    "relevance": 22,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "01ed12c853f234f3731095c6cc32265c0aa6d799",
+                    "relevance": 18,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "1135b2c1d2ee1e0c5e38725d7a8f53921f5c7824",
+                    "relevance": 18,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "9da1f1bd26758016f5ec40aae7479827e4514f21",
+                    "relevance": 18,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "5045d8b274600389e65674fab0d0998f39b6993a",
+                    "relevance": 18,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "c456a08a2adccad646040d5ad5c7d4558c28745e",
+                    "relevance": 18,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "4e5bdc22bb6612d449e3a851ff75f7ccdd3d0466",
+                    "relevance": 14,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-0933": {
+            "commits": [
+                {
+                    "commit_hash": "8ecdb9ea080e45aaaf7be5fee3387f64e5bd842a",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "d2f8c410b4669a3ccffeaa44d07915b1f64969b1",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "45a8bfc99c6d511811a99eb05db66520a2992949",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "93752a1fa83bd9c43520b992d49d9f7c0763fbeb",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "61b61fd8d9fc490d838fff5ece81ddaec80b9ef1",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "52dcd2bd3b9582e968897feb668c1fa02edcb085",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "ac40d766f43d5f90e7de76d8baf5c2621e97792f",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "090b2585649d9c598a77efde8d90a02540808e0e",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "bc9e381cf0168d17534be00bde482a62f4a039ac",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "f40b55cf266e5a2f4f8bdde7ca2cb063a1f49917",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-0207": {
+            "commits": [
+                {
+                    "commit_hash": "d4e4982f940b47143fc88ffaecfc813e5b34ee32",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "2fdf8605758befc2fac78fbc6096f786fc8b34c9",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "46426d83edb8191e930f0f637d9e2a33859f42dd",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "94b18f6b74e3c493515157909fad932f48caec1a",
+                    "relevance": 2,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "8a82679cb0ed010ba307a82b27acd15936b3539e",
+                    "relevance": 2,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "32fde0f8c38f89d596d78b7f2292b4a26958f484",
+                    "relevance": 2,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "857511ca8f7d4a3b68786ab29be15d7b7149d432",
+                    "relevance": 0,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "49c45a3abc42465a0a8d61abb456b580bbf2f883",
+                    "relevance": 0,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "246e677097f249ad2352ddc595ef43cc257f8e27",
+                    "relevance": 0,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "3c28f94a4814f3294ff4e8179109c72ffa7f0722",
+                    "relevance": 0,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-0191": {
+            "commits": [
+                {
+                    "commit_hash": "cd1b8a99869885614785f85699437b57b23ba6d1",
+                    "relevance": 12,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "55418db730989e0e77273a8ba6234f5e2e861ef4",
+                    "relevance": 12,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "8498c969d088a07a080c28d1a8c2169ad3bde0a8",
+                    "relevance": 12,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "aa78736c8da40d8a292d5c474fd270ab397b5074",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "506478eb1bc62f942f823b9e8facf4f6d1c9a539",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "7418a033db1a33e57a1c1a65147830cda8ae8bf9",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "62fc1ab830c1043a625d77c60b45844e96540cfc",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "e13d89a94ba938efc489b2a02a0e19b0fa79e3d4",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "3a279c663436a8c4a8cb993df0ff3e9cc3e63213",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "730c2dc11a7854543416aa399b527b22d9a9c334",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-0214": {
+            "commits": [
+                {
+                    "commit_hash": "dade9e2ccb685d0f59977633abffbf28ab930081",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "3d967544c2dffdfc69fea64c1ae58e47ded15919",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "c069d160f92e67669150a376fec6661025b2d4b8",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "586f3c3c2bcab707d1a5d3a43aa409dcee129393",
+                    "relevance": 6,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "88c991837adf37905c031ef75187f345f9998245",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "9d120dd6490b6dd657f0411ab31855d8de010376",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "6d319666872b2c92b4adb9693c8937a94ad3d174",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "d2981f18d21f454c22648382269c2e74c74eaab7",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "5e7d541cf12a071698f0ced3555e24ddf268c6d8",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "5681431abe7a7f3cd114c93efc655d341953c4ed",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-10184": {
+            "commits": [
+                {
+                    "commit_hash": "5fa7ac68c0e4251c93056d9982db5e794e04ebfa",
+                    "relevance": 102,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "d2715e3afa13f50deaa19643676816ce391551e9",
+                    "relevance": 68,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "439001a0ca1fb4b0f44d63b06a66fe9000899202",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "431015d70128262ba5e1917e614524b46d51731b",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "2ed9d57dfb9c04464b569ddf1592982127154ffc",
+                    "relevance": 6,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "8b2bb8b73db89d89dae77888530353ace7f43755",
+                    "relevance": 6,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "0b97ab25f9a68decb5273c9f15bbde31a45c3c56",
+                    "relevance": 6,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "a7477cd9e18ca50cf53574a4850c2bb110c7ae68",
+                    "relevance": 6,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "984b714c2d035cccaab9e45a0a7250af35f13c4d",
+                    "relevance": 6,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "efa90a27d96169d60d3ca89fcf0c54f664c651da",
+                    "relevance": 6,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-10077": {
+            "commits": [
+                {
+                    "commit_hash": "fbca81686104b50909a5a71b63ad476e39c59d56",
+                    "relevance": 30,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "60a9cb84ce36a0392fa5a01afcf28c11857c2f9e",
+                    "relevance": 30,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "4c4b8bf2490f7d09228120507453e49ebded6b5b",
+                    "relevance": 26,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "874c7e89201b50d0eb992ab42a39966767836e33",
+                    "relevance": 26,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "e8dd3526bedd5cd59380e67f9ad604933b36a9b3",
+                    "relevance": 20,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "59881d4c80c3c686cce582714ef6ff31956502ad",
+                    "relevance": 18,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "edff448e1b6f5fd35aea2d72f88e3c7a88741c0a",
+                    "relevance": 14,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "87c89f0405d6b31fc165358ce5d5bc4536e32a8a",
+                    "relevance": 14,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "8ccb6b2a1f1a3650159e1ddf1be885d4281309c1",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "46cd981dfb431730da3f9249f5db858aacf11e52",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-1000021": {
+            "commits": [
+                {
+                    "commit_hash": "7cd73b594e8122dddf847953fcfc85ab4d316416",
+                    "relevance": 72,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "fb75f7cda9e8703bd5766cd291a793f23ead28a5",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "d85d8f4479190747c6344b5f718cd9d027546c56",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "15c6b775ff61a2fb5a7c963ef47407075e0d1954",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "5f25b0b6a020c1a368b3d0c9766887c4c95205a9",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "41419a21613bd17f58965840340251872603a2e4",
+                    "relevance": 0,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "4b482477e295bac0a7e3777883579de3ece3d7e0",
+                    "relevance": 0,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "f7e4caadfe8f63b5aa14d9266e3c722e9ab4007a",
+                    "relevance": 0,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-1003010": {
+            "commits": [
+                {
+                    "commit_hash": "ac412ccceb9284106abc1b4d1cc84cf7a5adde57",
+                    "relevance": 88,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "f9152d943936b1c6b493dfe750d27f0caa7c0767",
+                    "relevance": 84,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "df016c238c0605d2bd923eb5e2306779777453ca",
+                    "relevance": 38,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "1e698a587dfc24ced32742b7746fad92cdf67c14",
+                    "relevance": 38,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "1cbfc3453be66caa45faf07e11d0e05b0c06ff10",
+                    "relevance": 16,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "649d07949171afe1b29f644bddb4ab3d6114d850",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "572d10e4f1bf7ae736e8e38298e013f6d4952de3",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "e0b7afa2d15cfa2e86431b0439b11fd2d9f59961",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "9fbdc455d3315d1e2ebaf5ab2a058254d5fd0b79",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "63afee640c638f67753733701a79e0cc6614b029",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-0201": {
+            "commits": [
+                {
+                    "commit_hash": "5ff19e3672987bdde2843a3f031e2bf0010e35f1",
+                    "relevance": 116,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "099e9329dbd3db350184d44067ac2e399f05e495",
+                    "relevance": 22,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "9828685d20bc99272ec0689a590d27b0f8f7ebb6",
+                    "relevance": 20,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "bd09fda553cf9b9334039a7b3bd9dbc7bab70602",
+                    "relevance": 20,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "c418b4456794b3ee7fdb7adfb60a91e36345fa20",
+                    "relevance": 20,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "4a8fda7031d68236441b13bd878936b2607c5244",
+                    "relevance": 18,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "3b8e54292228f5cb465c50d89f16f229c8bd8e6c",
+                    "relevance": 18,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "8b82c2694dc31238b04345a7bd95c6a7fb62c7f8",
+                    "relevance": 18,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "b752ef66876a141035a42f30aad69e3166cad746",
+                    "relevance": 18,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "dc909724700e39145c2ca71cee5864fe6c074e3e",
+                    "relevance": 16,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-10135": {
+            "commits": [
+                {
+                    "commit_hash": "dee8ff1ea3a17bc93ead059b9567ae0ff965592c",
+                    "relevance": 154,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "2fb16f95208ba02670fd389644b2f94963b18970",
+                    "relevance": 72,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "6be2e60bb0b65c0ebb66dbc9661675dacfcde0b2",
+                    "relevance": 20,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "d2a5276a1e059686b871aaddb5c5dd8d36160fa8",
+                    "relevance": 16,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "c871bd23a8df5d9225c6b31c6e3d9092a99c9a8e",
+                    "relevance": 12,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "8cd2155be65df519da57dc778e5f141e5c5a9b69",
+                    "relevance": 12,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "a41f3b3eb118f4debc8a87b771093aba6d5aeff5",
+                    "relevance": 12,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "05fbfe64607d5b299bf62ec5557330217bd3ce47",
+                    "relevance": 12,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "26fdc76ef945100722526f21315ff2dde1308e20",
+                    "relevance": 12,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "767a7c46ea9e1e9791c3b1c5a12952daf4ce6a31",
+                    "relevance": 12,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-1003012": {
+            "commits": [
+                {
+                    "commit_hash": "1a03020b5a50c1e3f47d4b0902ec7fc78d3c86ce",
+                    "relevance": 90,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "74d511ff448a74859fae62461263c5e5305fcf70",
+                    "relevance": 26,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "a9bd8e862f2b0d4e0f467f3dec7e986bf7692cca",
+                    "relevance": 22,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "1292256e8ffefe785a5790722a8419442c21ed4c",
+                    "relevance": 22,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "7f7703a9f203b9abfdb1b22d86b585533856eb81",
+                    "relevance": 20,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "e5337b8f492ef220dde8a551bd423075386cc21d",
+                    "relevance": 20,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "0d1cf9c319c02a60016a42d2316e18f7395992a9",
+                    "relevance": 20,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "552e97d743e5b553b980e95a6d761d785f1c6055",
+                    "relevance": 18,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "5c53a7cd2115b9d5217c20411dbb0b802a4cf54d",
+                    "relevance": 18,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "067501b21a27572b5c80a0993c53091641539eee",
+                    "relevance": 14,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-0213": {
+            "commits": [
+                {
+                    "commit_hash": "586f3c3c2bcab707d1a5d3a43aa409dcee129393",
+                    "relevance": 18,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "d39977c41348cde01f3f54bd22c06ae696aab7b9",
+                    "relevance": 12,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "5a80f014e45dfdc856cf6f791e221244ae010948",
+                    "relevance": 12,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "956818e3e6c6b8b9b6184633fefa946b7f45ec00",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "39b2449b7d545295227e576247ecd67afd1cd925",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "1ce7039d4f570c61dd940df84c7913e16fae054c",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "9c981ecf2523d3ba5e7fd6fe1f2e8b103ddc54f9",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "24ee701d1daee202e799b5ca17f9dff19d398c6e",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "dade9e2ccb685d0f59977633abffbf28ab930081",
+                    "relevance": 6,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "c069d160f92e67669150a376fec6661025b2d4b8",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-0924": {
+            "commits": [
+                {
+                    "commit_hash": "52dcd2bd3b9582e968897feb668c1fa02edcb085",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "ac40d766f43d5f90e7de76d8baf5c2621e97792f",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "93752a1fa83bd9c43520b992d49d9f7c0763fbeb",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "090b2585649d9c598a77efde8d90a02540808e0e",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "8ecdb9ea080e45aaaf7be5fee3387f64e5bd842a",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "61b61fd8d9fc490d838fff5ece81ddaec80b9ef1",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "d2f8c410b4669a3ccffeaa44d07915b1f64969b1",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "bc9e381cf0168d17534be00bde482a62f4a039ac",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "45a8bfc99c6d511811a99eb05db66520a2992949",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "f40b55cf266e5a2f4f8bdde7ca2cb063a1f49917",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-10083": {
+            "commits": [
+                {
+                    "commit_hash": "a97766d62f067845869c44b39604851c7ca91d02",
+                    "relevance": 76,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "cf6f5172503ce438c6c22c334c9367f774db7b24",
+                    "relevance": 76,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "fe68d43e1dfd00807ccbc43fd43bff73d49de26c",
+                    "relevance": 24,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "43235724e2031c30fc48e05be0d2136fd58efa52",
+                    "relevance": 24,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "31463c5dad38be0dcb5f8872c4b423f1f01cc786",
+                    "relevance": 20,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "b508d6bfbc2b6a68fe2ab152de96611f06a8724a",
+                    "relevance": 20,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "c5d0643d1da2dbf5c2355a4ec8527073a99989f3",
+                    "relevance": 20,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "79e05c9f583aa1e4d390f380e375253bd7be198e",
+                    "relevance": 20,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "65c41ab917d7b5f323aa71d841cc03b29e12d480",
+                    "relevance": 20,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "91b2283f49262b7d4c8a2fecbc757a360b0f8321",
+                    "relevance": 20,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-10094": {
+            "commits": [
+                {
+                    "commit_hash": "c4e63c9be8665cccea8b680c59a6f5cfbc03e0fc",
+                    "relevance": 86,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "c21ba30e2b8bf3b9482c833cba4b150a7e3758a7",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "f8525a9bc70896a3e3aa5be9101754c373ac798d",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "34707b00b8f54bdcd9097613af23b1a754fc0a70",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "a8ccfa1c70f4f1e1bfcd19abf1b0e26843e93815",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "8d386f827eb31e7f1cb189ce942c67a84a0c6bdc",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "72fa7951edb1a0dc87daeb82f9b1db7a1e80a253",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "03fa48a887262a72146e6227da4b5eff8c6f6024",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "86325105ab206dca88d076dc865fcb17404c4531",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "620134b90b72632fee486ba3aa5b25ff6b271d22",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-1003005": {
+            "commits": [
+                {
+                    "commit_hash": "35119273101af26792457ec177f34f6f4fa49d99",
+                    "relevance": 100,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "ca06ea3b51b0b2f3a903ace81c181272c3352d50",
+                    "relevance": 0,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "bc0879c1092145c5c04bbe7c55241ac4237252b9",
+                    "relevance": 0,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-10243": {
+            "commits": [
+                {
+                    "commit_hash": "68e54b9be5115e15fc58ce6ef454103d704df273",
+                    "relevance": 12,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "3c58b4ffe44b8d9eab1bc043f1b138398eb08077",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "15e5640a237912510cdfbbfd083eb7bbb7bdf30e",
+                    "relevance": 6,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "da76b9fc7bcda3ddae6c1e329371c37bfcadbf98",
+                    "relevance": 6,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "b3062b0dec54306abe87306aa91499d6de8a0a41",
+                    "relevance": 6,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "f55a39e81f62d17f5a09b184370c10a16a32a0d9",
+                    "relevance": 6,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "0c424aabffe319c3442f656341d5f93d15be944e",
+                    "relevance": 6,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "2a0b96a4f1fc986476da7f1f7be2796cf4602e30",
+                    "relevance": 6,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "de402bc247ca42209c00e511da901537f80bbdd7",
+                    "relevance": 6,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "5e9f3e3d03c8a9cc7857b3fb9080b256821bb32a",
+                    "relevance": 6,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-0912": {
+            "commits": [
+                {
+                    "commit_hash": "52dcd2bd3b9582e968897feb668c1fa02edcb085",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "ac40d766f43d5f90e7de76d8baf5c2621e97792f",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "93752a1fa83bd9c43520b992d49d9f7c0763fbeb",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "090b2585649d9c598a77efde8d90a02540808e0e",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "8ecdb9ea080e45aaaf7be5fee3387f64e5bd842a",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "61b61fd8d9fc490d838fff5ece81ddaec80b9ef1",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "d2f8c410b4669a3ccffeaa44d07915b1f64969b1",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "bc9e381cf0168d17534be00bde482a62f4a039ac",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "45a8bfc99c6d511811a99eb05db66520a2992949",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "f40b55cf266e5a2f4f8bdde7ca2cb063a1f49917",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-0917": {
+            "commits": [
+                {
+                    "commit_hash": "8ecdb9ea080e45aaaf7be5fee3387f64e5bd842a",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "d2f8c410b4669a3ccffeaa44d07915b1f64969b1",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "45a8bfc99c6d511811a99eb05db66520a2992949",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "93752a1fa83bd9c43520b992d49d9f7c0763fbeb",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "61b61fd8d9fc490d838fff5ece81ddaec80b9ef1",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "52dcd2bd3b9582e968897feb668c1fa02edcb085",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "ac40d766f43d5f90e7de76d8baf5c2621e97792f",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "090b2585649d9c598a77efde8d90a02540808e0e",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "bc9e381cf0168d17534be00bde482a62f4a039ac",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "f40b55cf266e5a2f4f8bdde7ca2cb063a1f49917",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-10078": {
+            "commits": [
+                {
+                    "commit_hash": "fbca81686104b50909a5a71b63ad476e39c59d56",
+                    "relevance": 38,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "46cd981dfb431730da3f9249f5db858aacf11e52",
+                    "relevance": 34,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "60a9cb84ce36a0392fa5a01afcf28c11857c2f9e",
+                    "relevance": 30,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "4c4b8bf2490f7d09228120507453e49ebded6b5b",
+                    "relevance": 26,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "874c7e89201b50d0eb992ab42a39966767836e33",
+                    "relevance": 26,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "cdff7ae01885f8597d953aa496ee3d22f47749e9",
+                    "relevance": 24,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "e8dd3526bedd5cd59380e67f9ad604933b36a9b3",
+                    "relevance": 20,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "59881d4c80c3c686cce582714ef6ff31956502ad",
+                    "relevance": 18,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "edff448e1b6f5fd35aea2d72f88e3c7a88741c0a",
+                    "relevance": 14,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "87c89f0405d6b31fc165358ce5d5bc4536e32a8a",
+                    "relevance": 14,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-1000005": {
+            "commits": [
+                {
+                    "commit_hash": "20ff6399433c18233f31817ba2f35a86dd9d5e22",
+                    "relevance": 126,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "624847921c41c5cd02b53589cf018a9705135759",
+                    "relevance": 6,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "e887e2a7fd1a90cb3d9ad45e5c8c1277427345dd",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "41f6aab8b0c3020fd598c453baa138295b4c1526",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "5a124ed382cf9241597c7ba12f98a756daa7f8df",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "676dd95cd9d3638172612df8123da7aef0ca3522",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "dfcb5fe7e62bb53d37630b57b7af129e96988c7a",
+                    "relevance": 0,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "d26a5f9d91a1351c01588f96f4c9f06b1404eec4",
+                    "relevance": 0,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-1003013": {
+            "commits": [
+                {
+                    "commit_hash": "62775e78532b756826bb237775b64a5052624b57",
+                    "relevance": 90,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "cf5aaf0b64d73048c19a80ac278827e7e95fa73b",
+                    "relevance": 26,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "52a4ca0ae6d8c3e53d244fee90a8a6ab7ad2b2ee",
+                    "relevance": 26,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "7f7703a9f203b9abfdb1b22d86b585533856eb81",
+                    "relevance": 20,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "ac3124a5dfac6d6b43b1f317c44691bd5dea0697",
+                    "relevance": 14,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "0d1cf9c319c02a60016a42d2316e18f7395992a9",
+                    "relevance": 12,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "20ef2ae01e4560b794e350829ce1d31e163bd9ff",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "5c53a7cd2115b9d5217c20411dbb0b802a4cf54d",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "e5337b8f492ef220dde8a551bd423075386cc21d",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "1f4c17087609eab09a3d87edd59665f9ef8dd990",
+                    "relevance": 6,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-10157": {
+            "commits": [
+                {
+                    "commit_hash": "55e54b55d05ba636bc125a8f3d39f0052d13f8f6",
+                    "relevance": 64,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "16a603656ce9ad31d9026dd8531edc295e573fd9",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "7f707d5dc29532f13b7500592d19ab9a2accb44f",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "9d14d8397901f992fa07f393382fd901d8dd2413",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "1b5d7f4bd03debd39fbeb3d60f872971dcdea6a5",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "1dd18979eb0cc46b7f4ab907bd0eaef091d5554c",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "25141a562b5cbc4137eb6aac8396e8b98680432b",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "71bfb99375e1f0625c850b843697d93c60359562",
+                    "relevance": 0,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-10080": {
+            "commits": [
+                {
+                    "commit_hash": "cf6f5172503ce438c6c22c334c9367f774db7b24",
+                    "relevance": 76,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "a97766d62f067845869c44b39604851c7ca91d02",
+                    "relevance": 72,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "3696b5bfcf0bd9e12ee4e9472f3413a93c9c0fcd",
+                    "relevance": 28,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "43235724e2031c30fc48e05be0d2136fd58efa52",
+                    "relevance": 28,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "2453c36710b4752c653752fe2991771a92a13de8",
+                    "relevance": 20,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "410c9a4ecd6492a1ddae4c51862e4a25c004ceda",
+                    "relevance": 20,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "65c41ab917d7b5f323aa71d841cc03b29e12d480",
+                    "relevance": 20,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "8a50cb10b20bfdbf61fa1a769b817c86eab9653a",
+                    "relevance": 20,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "5249a85030eafb5db63650fadbc2c03d257e7cc0",
+                    "relevance": 20,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "b508d6bfbc2b6a68fe2ab152de96611f06a8724a",
+                    "relevance": 20,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-10131": {
+            "commits": [
+                {
+                    "commit_hash": "cb1214c124e1bd61f7dd551b94a794864861592e",
+                    "relevance": 78,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "7bfea7ee65f8626414a1e4651a41caa1a4728d63",
+                    "relevance": 12,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "2a78347cb3a2549bbc45885f5b424b71394a21d1",
+                    "relevance": 12,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "df8a62fe4938aa41a39e815937c58bc0ed21b664",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "48f1857c19e74faa35c826816d10db6865697601",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "18551d644124cbbed27e537bc52681c20f0daffb",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "e33dca72de5265dfe802a7addefcb221bf56f7a4",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "c6867de4560c24b62af2372b36863f8f7382e2be",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "993a356e1e94f37d852a35655d0bd9db6e4054de",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "2964aa982523f073e8a7487e77828402f5cad68f",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-10174": {
+            "commits": [
+                {
+                    "commit_hash": "75a5d52a612da99c47e0cb10d3e5ee9fc12f7f11",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "5fff1d4d6e19cb932400f7d8cc87784c1ef8d0b6",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "37ec1a442979c1a77952e97fe07d8d066b329123",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "2ba8db77bda9174313f1a138419ec21b0dd6c1ac",
+                    "relevance": 6,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "5e57892eacc6aad1dbf7a70e91ac6fa5553ba791",
+                    "relevance": 6,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "5c3158375a01e8672f6e487f28e9ae07146a5d94",
+                    "relevance": 6,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "9dc381a7530e0a6849f240331e633964ce78fa03",
+                    "relevance": 6,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "638fe0036301282fd3c39bc359ed5e7c15f32dd4",
+                    "relevance": 6,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "8162dea2897f3d901d23899d22fafb28beb81a3e",
+                    "relevance": 6,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "d4f1ae51565ffe6b4755ffd109e275018f93b18b",
+                    "relevance": 6,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-10173": {
+            "commits": [
+                {
+                    "commit_hash": "abde3fa408a7b0ac32d62963e2f8443e8400d061",
+                    "relevance": 22,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "0b1c48ed9983c25ab76a589618b778117016ef37",
+                    "relevance": 18,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "e43e1d90acf39b81b6ed18ec3042b533fb791595",
+                    "relevance": 12,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "1e933c6e6ae392ff5179077187f0640d14abac85",
+                    "relevance": 12,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "fc7a1ce392d061d273e138118961c5672c6b4679",
+                    "relevance": 12,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "af882eceb0e9f3bc3d3e6fd50efa95b1dd06ca6c",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "30bae24361531fbb03735dfeb331f9f393ab4f0d",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "4df126c40ac56159b6ff8ecacf612fb48287a249",
+                    "relevance": 8,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "d48e138e6d31d0a720cb2c27c6a90b0349babed8",
+                    "relevance": 6,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "89ab8ac540088cc3d65637b89e654214264ff3b9",
+                    "relevance": 4,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        },
+        "CVE-2019-0226": {
+            "commits": [
+                {
+                    "commit_hash": "145d6111127fe62e8f18b848979905423e1183cc",
+                    "relevance": 12,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "5008f608a7d49687d5e608ccac3058e198874f9a",
+                    "relevance": 12,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "1ff73ff27cf9a9a714749563a2d4d029c448052e",
+                    "relevance": 12,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "de4c413925379913ffb3bf96ead7edc2dba98d4b",
+                    "relevance": 12,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "a6e067e462be2b27f8d44dd5cc9747fda7926e79",
+                    "relevance": 12,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "8498c969d088a07a080c28d1a8c2169ad3bde0a8",
+                    "relevance": 12,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "9a9eb410b28cff8a20cbf5834bfa6864cc32d189",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "c81f7abed867e843ccae3b9217586e6302b698f3",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "506478eb1bc62f942f823b9e8facf4f6d1c9a539",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                },
+                {
+                    "commit_hash": "0241a192f03699e93f9de39e9aaa4c50b97b71c4",
+                    "relevance": 10,
+                    "matched_llm_rule": "no"
+                }
+            ]
+        }
+    }
+}

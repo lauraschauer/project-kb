@@ -1,0 +1,3122 @@
+[
+    {
+        "nvd_info": {
+            "cve": {
+                "id": "CVE-2021-22696",
+                "sourceIdentifier": "security@apache.org",
+                "published": "2021-04-02T10:15:12.200",
+                "lastModified": "2023-11-07T03:30:24.383",
+                "vulnStatus": "Modified",
+                "cveTags": [],
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "CXF supports (via JwtRequestCodeFilter) passing OAuth 2 parameters via a JWT token as opposed to query parameters (see: The OAuth 2.0 Authorization Framework: JWT Secured Authorization Request (JAR)). Instead of sending a JWT token as a \"request\" parameter, the spec also supports specifying a URI from which to retrieve a JWT token from via the \"request_uri\" parameter. CXF was not validating the \"request_uri\" parameter (apart from ensuring it uses \"https) and was making a REST request to the parameter in the request to retrieve a token. This means that CXF was vulnerable to DDos attacks on the authorization server, as specified in section 10.4.1 of the spec. This issue affects Apache CXF versions prior to 3.4.3; Apache CXF versions prior to 3.3.10."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "CXF admite (por medio de JwtRequestCodeFilter) pasar par\u00e1metros de OAuth 2 por medio de un token JWT en lugar de par\u00e1metros de consulta (consulte: El Framework de Autorizaci\u00f3n de OAuth 2.0: JWT Secured Authorization Request (JAR)).&#xa0;En lugar de enviar un token JWT como un par\u00e1metro \"request\", la especificaci\u00f3n tambi\u00e9n admite la especificaci\u00f3n de un URI desde el cual recuperar un token JWT por medio del par\u00e1metro \"request_uri\".&#xa0;CXF no estaba comprobando el par\u00e1metro \"request_uri\" (adem\u00e1s de asegurarse de que usa \"https) y estaba realizando una petici\u00f3n REST hacia el par\u00e1metro en la petici\u00f3n para recuperar un token. Esto significa que CXF era vulnerable a ataques de DDos en el servidor de autorizaci\u00f3n, como lo especifica en secci\u00f3n 10.4.1 de la especificaci\u00f3n Este problema afecta a Apache CXF versiones anteriores a 3.4.3; Apache CXF versiones anteriores a 3.3.10."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 5.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-918"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security@apache.org",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-400"
+                            },
+                            {
+                                "lang": "en",
+                                "value": "CWE-918"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:cxf:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "3.3.10",
+                                        "matchCriteriaId": "19CA6A81-4F3E-4342-9C77-AF8416C2D443"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:cxf:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "3.4.0",
+                                        "versionEndExcluding": "3.4.3",
+                                        "matchCriteriaId": "66C2F29C-4DA4-43E2-9661-A6AAC9696E43"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:business_intelligence:5.5.0.0.0:*:*:*:enterprise:*:*:*",
+                                        "matchCriteriaId": "D40AD626-B23A-44A3-A6C0-1FFB4D647AE4"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:business_intelligence:5.9.0.0.0:*:*:*:enterprise:*:*:*",
+                                        "matchCriteriaId": "B602F9E8-1580-436C-A26D-6E6F8121A583"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:business_intelligence:12.2.1.3.0:*:*:*:enterprise:*:*:*",
+                                        "matchCriteriaId": "77C3DD16-1D81-40E1-B312-50FBD275507C"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:business_intelligence:12.2.1.4.0:*:*:*:enterprise:*:*:*",
+                                        "matchCriteriaId": "81DAC8C0-D342-44B5-9432-6B88D389584F"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_diameter_intelligence_hub:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "8.0.0",
+                                        "versionEndIncluding": "8.1.0",
+                                        "matchCriteriaId": "B5B4A191-44AE-4C35-9164-19237D2CF013"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_diameter_intelligence_hub:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "8.2.0",
+                                        "versionEndIncluding": "8.2.3",
+                                        "matchCriteriaId": "A543B4F8-149A-48AB-B388-AB7FA2ECAC18"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_element_manager:8.2.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "19EEAA04-A7BD-4FFF-8B0B-CEE5EC09F75C"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_session_report_manager:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "8.0.0",
+                                        "versionEndIncluding": "8.2.4.0",
+                                        "matchCriteriaId": "9B7C949D-0AB3-4566-9096-014C82FC1CF1"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_session_route_manager:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "8.0.0",
+                                        "versionEndIncluding": "8.2.4",
+                                        "matchCriteriaId": "1FDBAD8E-C926-4D6F-9FD2-B0428980D6DF"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://www.openwall.com/lists/oss-security/2021/04/02/2",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Mailing List",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://cxf.apache.org/security-advisories.data/CVE-2021-22696.txt.asc",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r6445001cc5f9a2bb1e6316993753306e054bdd1d702656b7cbe59045%40%3Cannounce.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r8651c06212c56294a1c0ea61a5ad7790c06502209c03f05c0c7c9914%40%3Cdev.cxf.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r8651c06212c56294a1c0ea61a5ad7790c06502209c03f05c0c7c9914%40%3Cusers.cxf.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/rec7160382badd3ef4ad017a22f64a266c7188b9ba71394f0d321e2d4%40%3Ccommits.cxf.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/rfb87e0bf3995e7d560afeed750fac9329ff5f1ad49da365129b7f89e%40%3Ccommits.cxf.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.oracle.com/security-alerts/cpuoct2021.html",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        "repo_url": "https://github.com/apache/cxf",
+        "version_interval": "8.0.0:8.2.4"
+    },
+    {
+        "nvd_info": {
+            "cve": {
+                "id": "CVE-2021-29425",
+                "sourceIdentifier": "security@apache.org",
+                "published": "2021-04-13T07:15:12.327",
+                "lastModified": "2023-11-07T03:32:35.503",
+                "vulnStatus": "Modified",
+                "cveTags": [],
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "In Apache Commons IO before 2.7, When invoking the method FileNameUtils.normalize with an improper input string, like \"//../foo\", or \"\\\\..\\foo\", the result would be the same value, thus possibly providing access to files in the parent directory, but not further above (thus \"limited\" path traversal), if the calling code would use the result to construct a path value."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "En Apache Commons IO versiones anteriores a 2.7, Cuando se invoca el m\u00e9todo FileNameUtils.normalize con una cadena de entrada inapropiada, como \"//../foo\" o \"\\\\..\\ foo\", el resultado ser\u00eda el mismo valor, por lo que posiblemente proporcionar acceso a archivos en el directorio principal, pero no m\u00e1s arriba (por lo tanto, salto de ruta \"limited\"), si el c\u00f3digo de llamada usara el resultado para construir un valor de ruta"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.8,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.2,
+                            "impactScore": 2.5
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.8
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 4.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-22"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security@apache.org",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-20"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:commons_io:2.2:-:*:*:*:*:*:*",
+                                        "matchCriteriaId": "55B8E817-8D9D-433E-99D8-4E412F006400"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:commons_io:2.3:-:*:*:*:*:*:*",
+                                        "matchCriteriaId": "911E607E-5A34-44DC-B9E0-01D3571DD014"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:commons_io:2.4:-:*:*:*:*:*:*",
+                                        "matchCriteriaId": "B5AB5A45-486F-4B37-9E5B-4EEB81F4F78A"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:commons_io:2.5:-:*:*:*:*:*:*",
+                                        "matchCriteriaId": "2DAD478C-FBF7-4FAE-8939-2FD625F8D71C"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:commons_io:2.6:-:*:*:*:*:*:*",
+                                        "matchCriteriaId": "9FA21029-762D-4E84-A80A-DB417CA8BD00"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:debian:debian_linux:9.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "DEECE5FC-CACF-4496-A3E7-164736409252"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:access_manager:11.1.2.3.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "8DEAFEDC-2D0F-4A5F-99A0-BD41DD6DC017"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:access_manager:12.2.1.3.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "A287FA5D-D7D9-40B4-8DB2-1D7CE1808408"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:access_manager:12.2.1.4.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "20EB3430-0FF2-4668-BB20-A5611ACC73F6"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:agile_engineering_data_management:6.2.1.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "80C9DBB8-3D50-4D5D-859A-B022EB7C2E64"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:agile_plm:9.3.6:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "C650FEDB-E903-4C2D-AD40-282AB5F2E3C2"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:application_performance_management:13.4.1.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "F84E5662-0289-4ED5-A112-BC506508216C"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:application_performance_management:13.5.1.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "AD312681-73A4-4B21-BDE8-50DED7E3E0CF"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:application_testing_suite:13.3.0.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "A125E817-F974-4509-872C-B71933F42AD1"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:banking_apis:18.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "869D51B3-FB50-4BD6-8A0C-D0984267525F"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:banking_apis:18.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "08B8F413-2000-493B-82B1-BEFE343BB8C4"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:banking_apis:18.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "042269E6-D3B4-4867-86FA-9301FACA9FF2"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:banking_apis:19.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "CF34B11F-3DE1-4C22-8EB1-AEE5CE5E4172"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:banking_apis:19.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "86F03B63-F922-45CD-A7D1-326DB0042875"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:banking_apis:20.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "7CBFC93F-8B39-45A2-981C-59B187169BD4"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:banking_apis:21.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "0843465C-F940-4FFC-998D-9A2668B75EA0"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:banking_digital_experience:17.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "560F20E6-AEA1-4CE5-A393-C9B2CF334C5C"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:banking_digital_experience:18.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "BBE7BF09-B89C-4590-821E-6C0587E096B5"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:banking_digital_experience:18.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "E7231D2D-4092-44F3-B60A-D7C9ED78AFDF"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:banking_digital_experience:19.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "F7BDFC10-45A0-46D8-AB92-4A5E2C1C76ED"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:banking_digital_experience:19.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "18127694-109C-4E7E-AE79-0BA351849291"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:banking_digital_experience:20.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "33F68878-BC19-4DB8-8A72-BD9FE3D0ACEC"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:banking_digital_experience:21.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "0D6895A6-511A-4DC6-9F9B-58E05B86BDB1"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:banking_enterprise_default_management:2.6.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "E60C0966-BF0D-4D18-B09B-5D0BB96DBFF3"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:banking_enterprise_default_management:2.7.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "E0FCD3BC-33D8-49D1-844B-6B9DE0CA4997"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:banking_enterprise_default_management:2.7.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "473749BD-267E-480F-8E7F-C762702DB66E"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:banking_enterprise_default_management:2.10.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "74C7E2F1-17FC-4322-A5C3-F7EB612BA4F5"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:banking_enterprise_default_management:2.12.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "320D36DA-D99F-4149-B582-3F4AB2F41A1B"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:banking_enterprise_default_managment:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "2.3.0",
+                                        "versionEndIncluding": "2.4.0",
+                                        "matchCriteriaId": "05E4EB25-7B7A-4A10-A535-8C7CA4D6FEB6"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:banking_party_management:2.7.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "C542DC5E-6657-4178-9C69-46FD3C187D56"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:banking_platform:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "2.3.0",
+                                        "versionEndIncluding": "2.4.1",
+                                        "matchCriteriaId": "6D0F559E-0790-461B-ACED-5B00F4D40893"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:banking_platform:2.6.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "132CE62A-FBFC-4001-81EC-35D81F73AF48"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:banking_platform:2.7.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "282150FF-C945-4A3E-8A80-E8757A8907EA"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:banking_platform:2.7.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "645AA3D1-C8B5-4CD2-8ACE-31541FA267F0"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:blockchain_platform:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "21.1.2",
+                                        "matchCriteriaId": "D0DBC938-A782-433F-8BF1-CA250C332AA7"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:commerce_guided_search:11.3.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "2A3622F5-5976-4BBC-A147-FC8A6431EA79"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_application_session_controller:3.9.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "787E2C1B-9BAD-4018-8495-E9BE75628BB8"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_billing_and_revenue_management_elastic_charging_engine:11.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "5A9E4125-B744-4A9D-BFE6-5D82939958FD"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_billing_and_revenue_management_elastic_charging_engine:12.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "261212BD-125A-487F-97E8-A9587935DFE8"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_cloud_native_core_network_repository_function:1.14.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "8E463039-5E48-4AA0-A42B-081053FA0111"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_cloud_native_core_policy:1.14.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "4479F76A-4B67-41CC-98C7-C76B81050F8E"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_cloud_native_core_unified_data_repository:1.4.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "AB1BC31C-6016-42A8-9517-2FBBC92620CC"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_contacts_server:8.0.0.6.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "3D2ACE8A-6D85-4401-88D8-46B678BA0063"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_converged_application_server_-_service_controller:6.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "0535B116-57D6-4448-86A2-09BCE50894B8"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_convergence:3.0.2.2.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "7DF939F5-C0E1-40A4-95A2-0CE7A03AB4EE"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_design_studio:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "7.4.0",
+                                        "versionEndIncluding": "7.4.2",
+                                        "matchCriteriaId": "6512DC4C-C331-4F6B-9DC9-D9DA5B8945DA"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_design_studio:7.3.5:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "1B54457C-8305-4F82-BE1E-DBA030A8E676"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_diameter_intelligence_hub:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "8.0.0",
+                                        "versionEndIncluding": "8.1.0",
+                                        "matchCriteriaId": "B5B4A191-44AE-4C35-9164-19237D2CF013"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_diameter_intelligence_hub:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "8.2.0",
+                                        "versionEndIncluding": "8.2.3",
+                                        "matchCriteriaId": "A543B4F8-149A-48AB-B388-AB7FA2ECAC18"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_interactive_session_recorder:6.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "46E23F2E-6733-45AF-9BD9-1A600BD278C8"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_interactive_session_recorder:6.4:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "E812639B-EE28-4C68-9F6F-70C8BF981C86"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_offline_mediation_controller:12.0.0.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "A23B00C1-878A-4B55-B87B-EFFFA6A5E622"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_order_and_service_management:7.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "21CC9E01-616E-411B-B0C7-DE6E599D3319"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_order_and_service_management:7.4:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "1F015E20-7886-4713-B4EC-FE7894066D09"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_policy_management:12.5.0.0.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "7B388677-D3A7-4304-8FDF-3C5ED51C8BA2"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_pricing_design_center:12.0.0.4.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "A28F42F0-FBDA-4574-AD30-7A04F27FEA3E"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_pricing_design_center:12.0.0.5.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "129CA55C-C770-4D42-BD17-9011F3AC93C4"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_service_broker:6.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "E6235EAE-47DD-4292-9941-6FF8D0A83843"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:enterprise_communications_broker:3.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "4BE83BC6-5A6F-40A1-AAC7-314A575D8E07"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:enterprise_session_border_controller:8.4:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "7015A8CB-8FA6-423E-8307-BD903244F517"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:enterprise_session_border_controller:9.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "F9A4E206-56C7-4578-AC9C-088B0C8D9CFE"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:financial_services_analytical_applications_infrastructure:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "8.0.7",
+                                        "versionEndIncluding": "8.1.1",
+                                        "matchCriteriaId": "7EA4D3C5-6A7C-4421-88EF-445A96DBCE0C"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:financial_services_model_management_and_governance:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "8.0.8",
+                                        "versionEndIncluding": "8.1.1",
+                                        "matchCriteriaId": "0E8FD060-E9A8-499C-87B0-AF7BBED7771F"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:flexcube_core_banking:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "11.6.0",
+                                        "versionEndIncluding": "11.8.0",
+                                        "matchCriteriaId": "AB8A1479-591A-4858-9B18-3B595694A965"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:flexcube_core_banking:5.2.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "DEFE7E72-D419-4040-81AB-B4934C13909F"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:flexcube_core_banking:11.10.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "B283B614-9E31-4148-8688-B0672B3A77B3"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:fusion_middleware_mapviewer:12.2.1.4.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "EA86EF7E-6162-4244-9C88-7AF5CAB787E0"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:health_sciences_data_management_workbench:2.5.2.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "E6C9A32B-B776-4704-818D-977B4B20D677"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:health_sciences_data_management_workbench:3.0.0.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "6989178B-A3D5-4441-A56C-6C639D4759DF"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:health_sciences_information_manager:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "3.0.1",
+                                        "versionEndIncluding": "3.0.4",
+                                        "matchCriteriaId": "16AEA21E-0B11-44A5-8BFB-550521D8E0D5"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:healthcare_data_repository:8.1.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "66C673C4-A825-46C0-816B-103E1C058D03"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:helidon:1.4.7:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "34CB181A-803A-4C8D-BB6A-8B7CE65C5A7E"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:helidon:2.2.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "8AA1985E-D3D4-4053-A538-22C428D160CC"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:insurance_policy_administration:11.0.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "0F89EC4B-6D34-40F0-B7C6-C03D03F81C13"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:insurance_policy_administration:11.1.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "00C9E689-ED91-4A9D-B9C0-5BF4EC131409"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:insurance_policy_administration:11.2.8:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "FC2370B5-F41B-45F6-AC9F-9C7B258AA717"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:insurance_policy_administration:11.3.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "EF958C28-4289-4433-8CD9-B6551F01926F"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:insurance_policy_administration:11.3.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "57E9FC66-F6A0-4FB0-8D92-2C9B9E3F2184"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:insurance_rules_palette:11.0.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "F3E25293-CB03-44CE-A8ED-04B3A0487A6A"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:insurance_rules_palette:11.1.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "4F9721E3-EE25-4C8A-9E0A-E60D465E0A97"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:insurance_rules_palette:11.2.8:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "2B47C49C-3662-4FCB-82E8-7484F7151858"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:insurance_rules_palette:11.3.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "D7A6C04D-43B3-4B83-A185-7CBD838C97E4"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:insurance_rules_palette:11.3.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "E2B51896-E4DA-4FDA-979F-481FFB3E588A"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:oss_support_tools:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "2.12.42",
+                                        "matchCriteriaId": "71CB79ED-A93E-4CBD-BCDD-82C5A00B373B"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:primavera_unifier:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "17.7",
+                                        "versionEndIncluding": "17.12",
+                                        "matchCriteriaId": "08FA59A8-6A62-4B33-8952-D6E658F8DAC9"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:primavera_unifier:18.8:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "202AD518-2E9B-4062-B063-9858AE1F9CE2"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:primavera_unifier:19.12:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "10864586-270E-4ACF-BDCC-ECFCD299305F"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:primavera_unifier:20.12:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "38340E3C-C452-4370-86D4-355B6B4E0A06"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:primavera_unifier:21.12:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "E9C55C69-E22E-4B80-9371-5CD821D79FE2"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:real_user_experience_insight:13.4.1.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "CADD7026-EF85-40A5-8563-7A34C6941B1F"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:real_user_experience_insight:13.5.1.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "58F019E8-F68D-41B5-9480-0A81616F2E7C"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:rest_data_services:*:*:*:*:-:*:*:*",
+                                        "versionEndExcluding": "21.2",
+                                        "matchCriteriaId": "3AC56890-3225-4A0F-B48A-1FB761810062"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:rest_data_services:21.3:*:*:*:-:*:*:*",
+                                        "matchCriteriaId": "37DDB2B3-1C16-44D6-BEE2-9D34637230F0"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:retail_assortment_planning:16.0.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "48C9BD8E-7214-4B44-B549-6F11B3EA8A04"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:retail_integration_bus:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "16.0.1",
+                                        "versionEndIncluding": "16.0.3",
+                                        "matchCriteriaId": "A921C710-1C59-429F-B985-67C0DBFD695E"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:retail_integration_bus:13.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "40AABFD3-1D0D-4C6B-BA9A-9DA70241B51C"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:retail_integration_bus:14.1.3.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "4EEF867A-587A-45E1-B2F6-0B903903F0F9"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:retail_integration_bus:14.1.3.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "8CFCE558-9972-46A2-8539-C16044F1BAA9"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:retail_integration_bus:15.0.3.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "A1194C4E-CF42-4B4D-BA9A-40FDD28F1D58"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:retail_integration_bus:19.0.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "DFDF4CB0-4680-449A-8576-915721D59500"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:retail_integration_bus:19.0.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "BD311C33-A309-44D5-BBFB-539D72C7F8C4"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:retail_merchandising_system:16.0.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "F8383028-B719-41FD-9B6A-71F8EB4C5F8D"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:retail_merchandising_system:19.0.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "AE1BC44A-F0AF-41CD-9CEB-B07AB5ADAB38"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:retail_order_broker:16.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "38E74E68-7F19-4EF3-AC00-3C249EAAA39E"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:retail_order_broker:18.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "0783F0D1-8FAC-4BCA-A6F5-C5C60E86D56D"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:retail_order_broker:19.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "C7BD0D41-1BED-4C4F-95C8-8987C98908DA"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:retail_pricing:19.0.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "D5D06393-D43A-4A5E-BED5-4DF2F4F38C74"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:retail_service_backbone:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "16.0.1",
+                                        "versionEndIncluding": "16.0.3",
+                                        "matchCriteriaId": "0CE45891-A6A5-4699-90A6-6F49E60A7987"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:retail_service_backbone:14.1.3.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "054F9E62-A6D6-4850-83AD-3628C74A4384"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:retail_service_backbone:14.1.3.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "E702EBED-DB39-4084-84B1-258BC5FE7545"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:retail_service_backbone:15.0.3.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "3F7956BF-D5B6-484B-999C-36B45CD8B75B"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:retail_service_backbone:19.0.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "0D14A54A-4B04-41DE-B731-844D8AC3BE23"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:retail_service_backbone:19.0.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "9DA6B655-A445-42E5-B6D9-70AB1C04774A"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:retail_size_profile_optimization:16.0.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "74ACC94B-4A9F-451D-B639-6008A108BDDC"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:retail_xstore_point_of_service:17.0.4:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "DEC41EB8-73B4-4BDF-9321-F34EC0BAF9E6"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:retail_xstore_point_of_service:18.0.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "48EFC111-B01B-4C34-87E4-D6B2C40C0122"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:retail_xstore_point_of_service:19.0.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "073FEA23-E46A-4C73-9D29-95CFF4F5A59D"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:retail_xstore_point_of_service:20.0.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "A69FB468-EAF3-4E67-95E7-DF92C281C1F1"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:solaris_cluster:4.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "87A83709-4D38-4844-8928-0C2D6F2033BD"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:utilities_testing_accelerator:6.0.0.1.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "A3ED272C-A545-4F8C-86C0-2736B3F2DCAF"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:utilities_testing_accelerator:6.0.0.2.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "C5B4C338-11E1-4235-9D5A-960B2711AC39"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:utilities_testing_accelerator:6.0.0.3.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "8C93F84E-9680-44EF-8656-D27440B51698"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:webcenter_portal:12.2.1.3.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "D6A4F71A-4269-40FC-8F61-1D1301F2B728"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:webcenter_portal:12.2.1.4.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "5A502118-5B2B-47AE-82EC-1999BD841103"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:weblogic_server:12.1.3.0.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "C93CC705-1F8C-4870-99E6-14BF264C3811"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:weblogic_server:12.2.1.3.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "F14A818F-AA16-4438-A3E4-E64C9287AC66"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:weblogic_server:12.2.1.4.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "4A5BB153-68E0-4DDA-87D1-0D9AB7F0A418"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:weblogic_server:14.1.1.0.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "04BCDC24-4A21-473C-8733-0D9CFB38A752"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:netapp:active_iq_unified_manager:-:*:*:*:*:linux:*:*",
+                                        "matchCriteriaId": "F3E0B672-3E06-4422-B2A4-0BD073AEC2A1"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:netapp:active_iq_unified_manager:-:*:*:*:*:vmware_vsphere:*:*",
+                                        "matchCriteriaId": "3A756737-1CC4-42C2-A4DF-E1C893B4E2D5"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:netapp:active_iq_unified_manager:-:*:*:*:*:windows:*:*",
+                                        "matchCriteriaId": "B55E8D50-99B4-47EC-86F9-699B67D473CE"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://issues.apache.org/jira/browse/IO-556",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Exploit",
+                            "Issue Tracking",
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r01b4a1fcdf3311c936ce33d75a9398b6c255f00c1a2f312ac21effe1%40%3Cnotifications.zookeeper.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r0bfa8f7921abdfae788b1f076a12f73a92c93cc0a6e1083bce0027c5%40%3Cnotifications.zookeeper.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r0d73e2071d1f1afe1a15da14c5b6feb2cf17e3871168d5a3c8451436%40%3Ccommits.pulsar.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r1c2f4683c35696cf6f863e3c107e37ec41305b1930dd40c17260de71%40%3Ccommits.pulsar.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r20416f39ca7f7344e7d76fe4d7063bb1d91ad106926626e7e83fb346%40%3Cnotifications.zookeeper.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r2345b49dbffa8a5c3c589c082fe39228a2c1d14f11b96c523da701db%40%3Cnotifications.zookeeper.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r2721aba31a8562639c4b937150897e24f78f747cdbda8641c0f659fe%40%3Cusers.kafka.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r27b1eedda37468256c4bb768fde1e8b79b37ec975cbbfd0d65a7ac34%40%3Cdev.myfaces.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r2bc986a070457daca457a54fe71ee09d2584c24dc262336ca32b6a19%40%3Cdev.creadur.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r2df50af2641d38f432ef025cd2ba5858215cc0cf3fc10396a674ad2e%40%3Cpluto-scm.portals.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r345330b7858304938b7b8029d02537a116d75265a598c98fa333504a%40%3Cdev.creadur.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r4050f9f6b42ebfa47a98cbdee4aabed4bb5fb8093db7dbb88faceba2%40%3Ccommits.zookeeper.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r462db908acc1e37c455e11b1a25992b81efd18e641e7e0ceb1b6e046%40%3Cnotifications.zookeeper.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r477c285126ada5c3b47946bb702cb222ac4e7fd3100c8549bdd6d3b2%40%3Cissues.zookeeper.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r47ab6f68cbba8e730f42c4ea752f3a44eb95fb09064070f2476bb401%40%3Cdev.creadur.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r5149f78be265be69d34eacb4e4b0fc7c9c697bcdfa91a1c1658d717b%40%3Cissues.zookeeper.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r523a6ffad58f71c4f3761e3cee72df878e48cdc89ebdce933be1475c%40%3Cdev.creadur.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r808be7d93b17a7055c1981a8453ae5f0d0fce5855407793c5d0ffffa%40%3Cuser.commons.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r8569a41d565ca880a4dee0e645dad1cd17ab4a92e68055ad9ebb7375%40%3Cdev.creadur.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r86528f4b7d222aed7891e7ac03d69a0db2a2dfa17b86ac3470d7f374%40%3Cnotifications.zookeeper.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r873d5ddafc0a68fd999725e559776dc4971d1ab39c0f5cc81bd9bc04%40%3Ccommits.pulsar.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r8bfc7235e6b39d90e6f446325a5a44c3e9e50da18860fdabcee23e29%40%3Cissues.zookeeper.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r8efcbabde973ea72f5e0933adc48ef1425db5cde850bf641b3993f31%40%3Cdev.commons.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r92ea904f4bae190b03bd42a4355ce3c2fbe8f36ab673e03f6ca3f9fa%40%3Cnotifications.zookeeper.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/ra8ef65aedc086d2d3d21492b4c08ae0eb8a3a42cc52e29ba1bc009d8%40%3Cdev.creadur.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/raa053846cae9d497606027816ae87b4e002b2e0eb66cb0dee710e1f5%40%3Cdev.creadur.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/rad4ae544747df32ccd58fff5a86cd556640396aeb161aa71dd3d192a%40%3Cuser.commons.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/rbebd3e19651baa7a4a5503a9901c95989df9d40602c8e35cb05d3eb5%40%3Cdev.creadur.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/rc10fa20ef4d13cbf6ebe0b06b5edb95466a1424a9b7673074ed03260%40%3Cnotifications.zookeeper.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/rc2dd3204260e9227a67253ef68b6f1599446005bfa0e1ddce4573a80%40%3Cpluto-dev.portals.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/rc359823b5500e9a9a2572678ddb8e01d3505a7ffcadfa8d13b8780ab%40%3Cuser.commons.apache.org%3E",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Mailing List",
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/rc5f3df5316c5237b78a3dff5ab95b311ad08e61d418cd992ca7e34ae%40%3Cnotifications.zookeeper.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/rc65f9bc679feffe4589ea0981ee98bc0af9139470f077a91580eeee0%40%3Cpluto-dev.portals.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/rca71a10ca533eb9bfac2d590533f02e6fb9064d3b6aa3ec90fdc4f51%40%3Cnotifications.zookeeper.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/rd09d4ab3e32e4b3a480e2ff6ff118712981ca82e817f28f2a85652a6%40%3Cnotifications.zookeeper.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/re41e9967bee064e7369411c28f0f5b2ad28b8334907c9c6208017279%40%3Cnotifications.zookeeper.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/red3aea910403d8620c73e1c7b9c9b145798d0469eb3298a7be7891af%40%3Cnotifications.zookeeper.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/rfa2f08b7c0caf80ca9f4a18bd875918fdd4e894e2ea47942a4589b9c%40%3Cdev.creadur.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/rfcd2c649c205f12b72dde044f905903460669a220a2eb7e12652d19d%40%3Cdev.zookeeper.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/rfd01af05babc95b8949e6d8ea78d9834699e1b06981040dde419a330%40%3Cdev.commons.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.debian.org/debian-lts-announce/2021/08/msg00016.html",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Mailing List",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://security.netapp.com/advisory/ntap-20220210-0004/",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.oracle.com/security-alerts/cpujan2022.html",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.oracle.com/security-alerts/cpujul2022.html",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.oracle.com/security-alerts/cpuoct2021.html",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        "repo_url": "https://github.com/apache/olingo-odata4",
+        "version_interval": "None:None"
+    },
+    {
+        "nvd_info": {
+            "cve": {
+                "id": "CVE-2021-30468",
+                "sourceIdentifier": "security@apache.org",
+                "published": "2021-06-16T12:15:12.617",
+                "lastModified": "2023-11-07T03:33:02.067",
+                "vulnStatus": "Modified",
+                "cveTags": [],
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "A vulnerability in the JsonMapObjectReaderWriter of Apache CXF allows an attacker to submit malformed JSON to a web service, which results in the thread getting stuck in an infinite loop, consuming CPU indefinitely. This issue affects Apache CXF versions prior to 3.4.4; Apache CXF versions prior to 3.3.11."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Una vulnerabilidad en la funci\u00f3n JsonMapObjectReaderWriter de Apache CXF permite a un atacante enviar un JSON malformado hacia un servicio web, lo que hace que el subproceso se quede atascado en un bucle infinito, consumiendo CPU indefinidamente. Este problema afecta a Apache CXF versiones anteriores a 3.4.4 y Apache CXF versiones anteriores a 3.3.11"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 5.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-835"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security@apache.org",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-400"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:cxf:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "3.3.11",
+                                        "matchCriteriaId": "30AD1489-9FAA-4CB3-9683-236BE2BF4762"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:cxf:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "3.4.0",
+                                        "versionEndExcluding": "3.4.4",
+                                        "matchCriteriaId": "A64083AE-3EDA-4F41-9B72-DA0BF554B9F6"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:tomee:8.0.6:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "BD41F07F-EDA1-45B1-8BB4-2918918527D3"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:business_intelligence:5.5.0.0.0:*:*:*:enterprise:*:*:*",
+                                        "matchCriteriaId": "D40AD626-B23A-44A3-A6C0-1FFB4D647AE4"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:business_intelligence:5.9.0.0.0:*:*:*:enterprise:*:*:*",
+                                        "matchCriteriaId": "B602F9E8-1580-436C-A26D-6E6F8121A583"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:business_intelligence:12.2.1.3.0:*:*:*:enterprise:*:*:*",
+                                        "matchCriteriaId": "77C3DD16-1D81-40E1-B312-50FBD275507C"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:business_intelligence:12.2.1.4.0:*:*:*:enterprise:*:*:*",
+                                        "matchCriteriaId": "81DAC8C0-D342-44B5-9432-6B88D389584F"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_element_manager:8.2.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "19EEAA04-A7BD-4FFF-8B0B-CEE5EC09F75C"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:oracle:communications_messaging_server:8.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "7569C0BD-16C1-441E-BAEB-840C94BE73EF"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://cxf.apache.org/security-advisories.data/CVE-2021-30468.txt.asc",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://www.openwall.com/lists/oss-security/2021/06/16/2",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Mailing List",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r3f46ae38e4a6e80c069cdb320e0ce831b0a21a12ef0cc92c0943f34a%40%3Ccommits.tomee.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r4771084730c4cf6e59eda60b4407122c86f174eb750b24f610ba9ff4%40%3Ccommits.tomee.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r4a4b6bc0520b69c18d2a59daa6af84ae49f0c22164dccb8538794459%40%3Cannounce.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r4a4b6bc0520b69c18d2a59daa6af84ae49f0c22164dccb8538794459%40%3Cdev.cxf.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r4a4b6bc0520b69c18d2a59daa6af84ae49f0c22164dccb8538794459%40%3Cusers.cxf.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r54c0f1cbbb9f381dfbedb9ea5e90ecb1c0a15371f40c4b10322ac737%40%3Ccommits.tomee.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/ra833f78b3fa577cb43558cf343859a1bf70b1c5ce2353b3877d96422%40%3Ccommits.tomee.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/rac07822057521dccf33ab5d136e0e8c599a6e2c8ac75e44ffbdc6e07%40%3Ccommits.tomee.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/re5b2a2b77faa22684d47bd2ac6623135c615565328ff40a1ec705448%40%3Ccommits.tomee.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/re9e05c6cab5f0dcc827eba4e6fcf26fa0b493e7ca84d62c867a80d03%40%3Ccommits.tomee.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://security.netapp.com/advisory/ntap-20210917-0002/",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.oracle.com/security-alerts/cpuoct2021.html",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        "repo_url": "https://github.com/apache/cxf",
+        "version_interval": "8.1:None"
+    },
+    {
+        "nvd_info": {
+            "cve": {
+                "id": "CVE-2021-44832",
+                "sourceIdentifier": "security@apache.org",
+                "published": "2021-12-28T20:15:08.400",
+                "lastModified": "2023-11-07T03:39:43.957",
+                "vulnStatus": "Modified",
+                "cveTags": [],
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Apache Log4j2 versions 2.0-beta7 through 2.17.0 (excluding security fix releases 2.3.2 and 2.12.4) are vulnerable to a remote code execution (RCE) attack when a configuration uses a JDBC Appender with a JNDI LDAP data source URI when an attacker has control of the target LDAP server. This issue is fixed by limiting JNDI data source names to the java protocol in Log4j2 versions 2.17.1, 2.12.4, and 2.3.2."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Las versiones de Apache Log4j2 de la 2.0-beta7 a la 2.17.0 (excluyendo las versiones de correcci\u00f3n de seguridad 2.3.2 y 2.12.4) son vulnerables a un ataque de ejecuci\u00f3n remota de c\u00f3digo (RCE) cuando una configuraci\u00f3n utiliza un JDBC Appender con un URI de origen de datos JNDI LDAP cuando un atacante tiene el control del servidor LDAP de destino. Este problema se soluciona limitando los nombres de fuentes de datos JNDI al protocolo java en las versiones 2.17.1, 2.12.4 y 2.3.2 de Log4j2"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "HIGH",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 6.6,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 0.7,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:C/I:C/A:C",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "COMPLETE",
+                                "integrityImpact": "COMPLETE",
+                                "availabilityImpact": "COMPLETE",
+                                "baseScore": 8.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 10.0,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-20"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security@apache.org",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-20"
+                            },
+                            {
+                                "lang": "en",
+                                "value": "CWE-74"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:log4j:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "2.0.1",
+                                        "versionEndExcluding": "2.3.2",
+                                        "matchCriteriaId": "E5737813-009A-4FDD-AC84-42E871EA1676"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:log4j:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "2.4",
+                                        "versionEndExcluding": "2.12.4",
+                                        "matchCriteriaId": "0D1858C4-53AC-4528-B86F-0AB83777B4F4"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:log4j:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "2.13.0",
+                                        "versionEndExcluding": "2.17.1",
+                                        "matchCriteriaId": "D127EBB0-E86F-4349-96E5-19BD198E0CCA"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:log4j:2.0:-:*:*:*:*:*:*",
+                                        "matchCriteriaId": "17854E42-7063-4A55-BF2A-4C7074CC2D60"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:log4j:2.0:beta7:*:*:*:*:*:*",
+                                        "matchCriteriaId": "F9D58C21-34AE-4782-8580-816B2F6A8F9D"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:log4j:2.0:beta8:*:*:*:*:*:*",
+                                        "matchCriteriaId": "DCFCBA59-E0DF-46FD-8431-C1043E7AB4EE"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:log4j:2.0:beta9:*:*:*:*:*:*",
+                                        "matchCriteriaId": "53F32FB2-6970-4975-8BD0-EAE12E9AD03A"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:log4j:2.0:rc1:*:*:*:*:*:*",
+                                        "matchCriteriaId": "B773ED91-1D39-42E6-9C52-D02210DE1A94"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:log4j:2.0:rc2:*:*:*:*:*:*",
+                                        "matchCriteriaId": "EF24312D-1A62-482E-8078-7EC24758B710"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_diameter_signaling_router:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "8.0.0.0",
+                                        "versionEndIncluding": "8.5.1.0",
+                                        "matchCriteriaId": "83F42D52-1E43-44E0-8B53-A2A918BDDEC3"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_interactive_session_recorder:6.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "46E23F2E-6733-45AF-9BD9-1A600BD278C8"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_interactive_session_recorder:6.4:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "E812639B-EE28-4C68-9F6F-70C8BF981C86"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:primavera_gateway:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "17.12.0",
+                                        "versionEndIncluding": "17.12.11",
+                                        "matchCriteriaId": "8B1C88FD-C2EC-4C96-AC7E-6F95C8763B48"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:primavera_gateway:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "18.8.0",
+                                        "versionEndIncluding": "18.8.13",
+                                        "matchCriteriaId": "A621A5AE-6974-4BA5-B1AC-7130A46F68F5"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:primavera_gateway:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "19.12.0",
+                                        "versionEndIncluding": "19.12.12",
+                                        "matchCriteriaId": "4096281D-2EBA-490D-8180-3C9D05EB890A"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:primavera_gateway:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "20.12.0",
+                                        "versionEndIncluding": "20.12.7",
+                                        "matchCriteriaId": "E6B70E72-B9FC-4E49-8EDD-29C7E14F5792"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:primavera_gateway:21.12.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "15F45363-236B-4040-8AE4-C6C0E204EDBA"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:primavera_p6_enterprise_project_portfolio_management:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "19.12.0",
+                                        "versionEndIncluding": "19.12.18.0",
+                                        "matchCriteriaId": "A66F0C7C-4310-489F-8E91-4171D17DB32F"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:primavera_p6_enterprise_project_portfolio_management:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "20.12.0.0",
+                                        "versionEndIncluding": "20.12.12.0",
+                                        "matchCriteriaId": "651104CE-0569-4E6D-ACAB-AD2AC85084DD"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:primavera_p6_enterprise_project_portfolio_management:21.12.0.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "45D89239-9142-46BD-846D-76A5A74A67B1"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:primavera_unifier:18.8:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "202AD518-2E9B-4062-B063-9858AE1F9CE2"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:primavera_unifier:19.12:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "10864586-270E-4ACF-BDCC-ECFCD299305F"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:primavera_unifier:20.12:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "38340E3C-C452-4370-86D4-355B6B4E0A06"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:primavera_unifier:21.12:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "E9C55C69-E22E-4B80-9371-5CD821D79FE2"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:retail_assortment_planning:16.0.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "48C9BD8E-7214-4B44-B549-6F11B3EA8A04"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:retail_fiscal_management:14.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "A5F6FD19-A314-4A1F-96CB-6DB1CED79430"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:siebel_ui_framework:21.12:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "8D62731F-3290-4383-A4F6-5274B4D63B1D"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:weblogic_server:12.2.1.3.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "F14A818F-AA16-4438-A3E4-E64C9287AC66"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:weblogic_server:12.2.1.4.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "4A5BB153-68E0-4DDA-87D1-0D9AB7F0A418"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:weblogic_server:14.1.1.0.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "04BCDC24-4A21-473C-8733-0D9CFB38A752"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:cisco:cloudcenter:4.10.0.16:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "66AB39B2-0CE1-4C7E-9E7B-B288A080D584"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:fedoraproject:fedora:34:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "A930E247-0B43-43CB-98FF-6CE7B8189835"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:fedoraproject:fedora:35:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "80E516C0-98A4-4ADE-B69F-66A772E2BAAA"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:debian:debian_linux:9.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "DEECE5FC-CACF-4496-A3E7-164736409252"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_brm_-_elastic_charging_engine:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "12.0.0.4.6",
+                                        "matchCriteriaId": "6894D860-000E-439D-8AB7-07E9B2ACC31B"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_brm_-_elastic_charging_engine:12.0.0.5.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "FD66C717-85E0-40E7-A51F-549C8196D557"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_diameter_signaling_router:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "8.3.0.0",
+                                        "versionEndIncluding": "8.5.1.0",
+                                        "matchCriteriaId": "F9550113-7423-48D8-A1C7-95D6AEE9B33C"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_interactive_session_recorder:6.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "46E23F2E-6733-45AF-9BD9-1A600BD278C8"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_interactive_session_recorder:6.4:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "E812639B-EE28-4C68-9F6F-70C8BF981C86"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_offline_mediation_controller:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "12.0.0.4.4",
+                                        "matchCriteriaId": "61A2E42A-4EF2-437D-A0EC-4A6A4F1EBD11"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:communications_offline_mediation_controller:12.0.0.5.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "5933FEA2-B79E-4EE7-B821-54D676B45734"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:flexcube_private_banking:12.1.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "1B74B912-152D-4F38-9FC1-741D6D0B27FC"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:health_sciences_data_management_workbench:2.5.2.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "E6C9A32B-B776-4704-818D-977B4B20D677"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:health_sciences_data_management_workbench:3.0.0.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "6989178B-A3D5-4441-A56C-6C639D4759DF"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:health_sciences_data_management_workbench:3.1.0.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "F5049591-AA1B-4D64-A925-40D0724074D1"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:policy_automation:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "12.2.0",
+                                        "versionEndIncluding": "12.2.24",
+                                        "matchCriteriaId": "F47057A9-2DDE-4178-B140-F7D70EAED8F6"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:policy_automation_for_mobile_devices:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "12.2.0",
+                                        "versionEndIncluding": "12.2.24",
+                                        "matchCriteriaId": "9132D7F2-43B3-4595-B8BF-C9DE897087F6"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:primavera_gateway:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "17.12.0",
+                                        "versionEndIncluding": "17.12.11",
+                                        "matchCriteriaId": "8B1C88FD-C2EC-4C96-AC7E-6F95C8763B48"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:primavera_gateway:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "18.8.0",
+                                        "versionEndIncluding": "18.8.13",
+                                        "matchCriteriaId": "A621A5AE-6974-4BA5-B1AC-7130A46F68F5"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:primavera_gateway:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "19.12.0",
+                                        "versionEndIncluding": "19.12.12",
+                                        "matchCriteriaId": "4096281D-2EBA-490D-8180-3C9D05EB890A"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:primavera_gateway:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "20.12.0",
+                                        "versionEndIncluding": "20.12.7",
+                                        "matchCriteriaId": "E6B70E72-B9FC-4E49-8EDD-29C7E14F5792"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:primavera_gateway:21.12.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "15F45363-236B-4040-8AE4-C6C0E204EDBA"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:primavera_p6_enterprise_project_portfolio_management:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "19.12.0.0",
+                                        "versionEndIncluding": "19.12.18.0",
+                                        "matchCriteriaId": "AD0DEC50-F4CD-4ACA-A118-D4F0D4F4C981"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:primavera_p6_enterprise_project_portfolio_management:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "20.12.0.0",
+                                        "versionEndIncluding": "20.12.12.0",
+                                        "matchCriteriaId": "651104CE-0569-4E6D-ACAB-AD2AC85084DD"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:primavera_p6_enterprise_project_portfolio_management:21.12.0.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "45D89239-9142-46BD-846D-76A5A74A67B1"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:primavera_unifier:18.8:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "202AD518-2E9B-4062-B063-9858AE1F9CE2"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:primavera_unifier:19.12:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "10864586-270E-4ACF-BDCC-ECFCD299305F"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:primavera_unifier:20.12:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "38340E3C-C452-4370-86D4-355B6B4E0A06"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:primavera_unifier:21.12:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "E9C55C69-E22E-4B80-9371-5CD821D79FE2"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:product_lifecycle_analytics:3.6.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "7F978162-CB2C-4166-947A-9048C6E878BC"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:retail_order_broker:18.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "0783F0D1-8FAC-4BCA-A6F5-C5C60E86D56D"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:retail_order_broker:19.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "C7BD0D41-1BED-4C4F-95C8-8987C98908DA"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:retail_xstore_point_of_service:17.0.4:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "DEC41EB8-73B4-4BDF-9321-F34EC0BAF9E6"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:retail_xstore_point_of_service:18.0.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "48EFC111-B01B-4C34-87E4-D6B2C40C0122"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:retail_xstore_point_of_service:19.0.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "073FEA23-E46A-4C73-9D29-95CFF4F5A59D"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:retail_xstore_point_of_service:20.0.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "A69FB468-EAF3-4E67-95E7-DF92C281C1F1"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:retail_xstore_point_of_service:21.0.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "0ABA57AC-4BBF-4E4F-9F7E-D42472C36EEB"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:siebel_ui_framework:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "21.12",
+                                        "matchCriteriaId": "889916ED-5EB2-49D6-8400-E6DBBD6C287F"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:weblogic_server:12.2.1.3.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "F14A818F-AA16-4438-A3E4-E64C9287AC66"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:weblogic_server:12.2.1.4.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "4A5BB153-68E0-4DDA-87D1-0D9AB7F0A418"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:weblogic_server:14.1.1.0.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "04BCDC24-4A21-473C-8733-0D9CFB38A752"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://www.openwall.com/lists/oss-security/2021/12/28/1",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Mailing List",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-784507.pdf",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://issues.apache.org/jira/browse/LOG4J2-3293",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Issue Tracking",
+                            "Patch",
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread/s1o5vlo78ypqxnzn6p8zf6t9shtq5143",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Mailing List",
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://lists.debian.org/debian-lts-announce/2021/12/msg00036.html",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Mailing List",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/EVV25FXL4FU5X6X5BSL7RLQ7T6F65MRA/",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/T57MPJUW3MA6QGWZRTMCHHMMPQNVKGFC/",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://security.netapp.com/advisory/ntap-20220104-0001/",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-apache-log4j-qRuKNEbd",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.oracle.com/security-alerts/cpujan2022.html",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.oracle.com/security-alerts/cpujul2022.html",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        "repo_url": "https://github.com/apache/olingo-odata4",
+        "version_interval": "14.1.1.0.0:None"
+    },
+    {
+        "nvd_info": {
+            "cve": {
+                "id": "CVE-2021-45046",
+                "sourceIdentifier": "security@apache.org",
+                "published": "2021-12-14T19:15:07.733",
+                "lastModified": "2024-06-27T19:24:09.027",
+                "vulnStatus": "Analyzed",
+                "cveTags": [],
+                "cisaExploitAdd": "2023-05-01",
+                "cisaActionDue": "2023-05-22",
+                "cisaRequiredAction": "Apply updates per vendor instructions.",
+                "cisaVulnerabilityName": "Apache Log4j2 Deserialization of Untrusted Data Vulnerability",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "It was found that the fix to address CVE-2021-44228 in Apache Log4j 2.15.0 was incomplete in certain non-default configurations. This could allows attackers with control over Thread Context Map (MDC) input data when the logging configuration uses a non-default Pattern Layout with either a Context Lookup (for example, $${ctx:loginId}) or a Thread Context Map pattern (%X, %mdc, or %MDC) to craft malicious input data using a JNDI Lookup pattern resulting in an information leak and remote code execution in some environments and local code execution in all environments. Log4j 2.16.0 (Java 8) and 2.12.2 (Java 7) fix this issue by removing support for message lookup patterns and disabling JNDI functionality by default."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Se descubri\u00f3 que la correcci\u00f3n para abordar CVE-2021-44228 en Apache Log4j versiones 2.15.0 estaba incompleta en ciertas configuraciones no predeterminadas. Esto podr\u00eda permitir a los atacantes con control sobre los datos de entrada de Thread Context Map (MDC) cuando la configuraci\u00f3n de registro utiliza un Pattern Layout no predeterminado con un Context Lookup (por ejemplo, $${ctx:loginId}) o un Thread Context Map pattern (%X, %mdc, o %MDC) para elaborar datos de entrada maliciosos utilizando un patr\u00f3n JNDI Lookup que resulta en una fuga de informaci\u00f3n y ejecuci\u00f3n de c\u00f3digo remoto en algunos entornos y ejecuci\u00f3n de c\u00f3digo local en todos los entornos. Log4j versiones 2.16.0 (Java 8) y 2.12.2 (Java 7) solucionan este problema eliminando el soporte para los patrones de b\u00fasqueda de mensajes y deshabilitando la funcionalidad JNDI por defecto"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.0,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 2.2,
+                            "impactScore": 6.0
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:H/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "HIGH",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 5.1
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 4.9,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@apache.org",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-917"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-917"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:log4j:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "2.0.1",
+                                        "versionEndExcluding": "2.12.2",
+                                        "matchCriteriaId": "155A3CFA-903D-4DC9-9A64-C964FAABACC4"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:log4j:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "2.13.0",
+                                        "versionEndExcluding": "2.16.0",
+                                        "matchCriteriaId": "88DD4847-0961-4CC4-90FC-DFCDC235F62F"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:log4j:2.0:-:*:*:*:*:*:*",
+                                        "matchCriteriaId": "17854E42-7063-4A55-BF2A-4C7074CC2D60"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:log4j:2.0:beta9:*:*:*:*:*:*",
+                                        "matchCriteriaId": "53F32FB2-6970-4975-8BD0-EAE12E9AD03A"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:log4j:2.0:rc1:*:*:*:*:*:*",
+                                        "matchCriteriaId": "B773ED91-1D39-42E6-9C52-D02210DE1A94"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:log4j:2.0:rc2:*:*:*:*:*:*",
+                                        "matchCriteriaId": "EF24312D-1A62-482E-8078-7EC24758B710"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:intel:audio_development_kit:-:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "099344DD-8AEE-49A0-88A8-691A8A1E651F"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:intel:computer_vision_annotation_tool:-:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "12A06BF8-E4DC-4389-8A91-8AC7598E0009"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:intel:datacenter_manager:-:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "070C1452-C349-4953-A748-3039F2217811"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:intel:genomics_kernel_library:-:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "18989EBC-E1FB-473B-83E0-48C8896C2E96"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:intel:oneapi:-:*:*:*:*:eclipse:*:*",
+                                        "matchCriteriaId": "720D3597-B74B-4540-AD50-80884183D5DE"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:intel:secure_device_onboard:-:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "22BEE177-D117-478C-8EAD-9606DEDF9FD5"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:intel:sensor_solution_firmware_development_kit:-:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "F021E2E7-0D8F-4336-82A6-77E521347C4F"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:intel:system_debugger:-:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "1F66B0A2-22C0-41D5-B866-1764DEC12CB2"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:intel:system_studio:-:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "FC619106-991C-413A-809D-C2410EBA4CDB"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "operator": "AND",
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:siemens:sppa-t3000_ses3000_firmware:*:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "E8320869-CBF4-4C92-885C-560C09855BFA"
+                                    }
+                                ]
+                            },
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": false,
+                                        "criteria": "cpe:2.3:h:siemens:sppa-t3000_ses3000:-:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "755BA221-33DD-40A2-A517-8574D042C261"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:captial:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "2019.1",
+                                        "matchCriteriaId": "07856DAA-EDB4-4522-BA16-CD302C9E39EF"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:captial:2019.1:-:*:*:*:*:*:*",
+                                        "matchCriteriaId": "F7AD819D-D093-472E-AA47-1A925111E4C8"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:captial:2019.1:sp1912:*:*:*:*:*:*",
+                                        "matchCriteriaId": "2D07A11A-A3C6-4D44-B2E0-A8358D23947A"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:comos:*:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "61597661-A3B0-4A14-AA6B-C911E0063390"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:desigo_cc_advanced_reports:4.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "BB524B33-68E7-46A2-B5CE-BCD9C3194B8B"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:desigo_cc_advanced_reports:4.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "5F852C6D-44A0-4CCE-83C7-4501CAD73F9F"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:desigo_cc_advanced_reports:4.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "AA61161C-C2E7-4852-963E-E2D3DFBFDC7B"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:desigo_cc_advanced_reports:5.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "A76AA04A-BB43-4027-895E-D1EACFCDF41B"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:desigo_cc_advanced_reports:5.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "2A6B60F3-327B-49B7-B5E4-F1C60896C9BB"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:desigo_cc_info_center:5.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "4BCF281E-B0A2-49E2-AEF8-8691BDCE08D5"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:desigo_cc_info_center:5.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "A87EFCC4-4BC1-4FEA-BAA4-8FF221838EBD"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:e-car_operation_center:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "2021-12-13",
+                                        "matchCriteriaId": "B678380B-E95E-4A8B-A49D-D13B62AA454E"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:energy_engage:3.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "4557476B-0157-44C2-BB50-299E7C7E1E72"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:energyip:8.5:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "991B2959-5AA3-4B68-A05A-42D9860FAA9D"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:energyip:8.6:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "7E5948A0-CA31-41DF-85B6-1E6D09E5720B"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:energyip:8.7:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "4C08D302-EEAC-45AA-9943-3A5F09E29FAB"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:energyip:9.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "D53BA68C-B653-4507-9A2F-177CF456960F"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:energyip_prepay:3.7:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "1F0C3D5E-579F-42C6-9D8C-37969A1D17D2"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:energyip_prepay:3.8:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "2C16C460-9482-4A22-92AC-1AE0E87D7F28"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:gma-manager:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "8.6.2j-398",
+                                        "matchCriteriaId": "0E180527-5C36-4158-B017-5BEDC0412FD6"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:head-end_system_universal_device_integration_system:*:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "AFDADA98-1CD0-45DA-9082-BFC383F7DB97"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:industrial_edge_management:*:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "E33D707F-100E-4DE7-A05B-42467DE75EAC"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:industrial_edge_management_hub:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "2021-12-13",
+                                        "matchCriteriaId": "DD3EAC80-44BE-41D2-8D57-0EE3DBA1E1B1"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:logo\\!_soft_comfort:*:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "2AC8AB52-F4F4-440D-84F5-2776BFE1957A"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:mendix:*:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "6AF6D774-AC8C-49CA-A00B-A2740CA8FA91"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:mindsphere:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "2021-12-11",
+                                        "matchCriteriaId": "6423B1A7-F09F-421A-A0AC-3059CB89B110"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:navigator:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "2021-12-13",
+                                        "matchCriteriaId": "48C6A61B-2198-4B9E-8BCF-824643C81EC3"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:nx:*:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "BEE2F7A1-8281-48F1-8BFB-4FE0D7E1AEF4"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:opcenter_intelligence:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "3.2",
+                                        "matchCriteriaId": "C74B9880-FFF9-48CA-974F-54FB80F30D2D"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:operation_scheduler:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "1.1.3",
+                                        "matchCriteriaId": "74D1F4AD-9A60-4432-864F-4505B3C60659"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:sentron_powermanager:4.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "7ABA5332-8D1E-4129-A557-FCECBAC12827"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:sentron_powermanager:4.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "9C3AA865-5570-4C8B-99DE-431AD7B163F1"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:siguard_dsa:4.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "00E03FB6-37F9-4559-8C86-F203D6782920"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:siguard_dsa:4.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "90439591-BA01-4007-A2B6-B316548D4595"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:siguard_dsa:4.4:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "E1F3B8B4-4D1B-4913-BD5F-1A04B47F829A"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:sipass_integrated:2.80:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "83E77D85-0AE8-41D6-AC0C-983A8B73C831"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:sipass_integrated:2.85:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "02B28A44-3708-480D-9D6D-DDF8C21A15EC"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:siveillance_command:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "4.16.2.1",
+                                        "matchCriteriaId": "2FC0A575-F771-4B44-A0C6-6A5FD98E5134"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:siveillance_control_pro:*:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "6D1D6B61-1F17-4008-9DFB-EF419777768E"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:siveillance_identity:1.5:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "9772EE3F-FFC5-4611-AD9A-8AD8304291BB"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:siveillance_identity:1.6:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "CF524892-278F-4373-A8A3-02A30FA1AFF4"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:siveillance_vantage:*:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "F30DE588-9479-46AA-8346-EA433EE83A5F"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:siveillance_viewpoint:*:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "4941EAD6-8759-4C72-ABA6-259C0E838216"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:solid_edge_cam_pro:*:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "5BF2708F-0BD9-41BF-8CB1-4D06C4EFB777"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:solid_edge_harness_design:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "2020",
+                                        "matchCriteriaId": "0762031C-DFF1-4962-AE05-0778B27324B9"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:solid_edge_harness_design:2020:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "96271088-1D1B-4378-8ABF-11DAB3BB4DDC"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:solid_edge_harness_design:2020:-:*:*:*:*:*:*",
+                                        "matchCriteriaId": "2595AD24-2DF2-4080-B780-BC03F810B9A9"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:solid_edge_harness_design:2020:sp2002:*:*:*:*:*:*",
+                                        "matchCriteriaId": "88096F08-F261-4E3E-9EEB-2AB0225CD6F3"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:spectrum_power_4:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "4.70",
+                                        "matchCriteriaId": "044994F7-8127-4F03-AA1A-B2AB41D68AF5"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:spectrum_power_4:4.70:-:*:*:*:*:*:*",
+                                        "matchCriteriaId": "A6CB3A8D-9577-41FB-8AC4-0DF8DE6A519C"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:spectrum_power_4:4.70:sp7:*:*:*:*:*:*",
+                                        "matchCriteriaId": "17B7C211-6339-4AF2-9564-94C7DE52EEB7"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:spectrum_power_4:4.70:sp8:*:*:*:*:*:*",
+                                        "matchCriteriaId": "DBCCBBBA-9A4F-4354-91EE-10A1460BBA3F"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:spectrum_power_7:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "2.30",
+                                        "matchCriteriaId": "12F81F6B-E455-4367-ADA4-8A5EC7F4754A"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:spectrum_power_7:2.30:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "A5EF509E-3799-4718-B361-EFCBA17AEEF3"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:spectrum_power_7:2.30:-:*:*:*:*:*:*",
+                                        "matchCriteriaId": "8CA31645-29FC-4432-9BFC-C98A808DB8CF"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:spectrum_power_7:2.30:sp2:*:*:*:*:*:*",
+                                        "matchCriteriaId": "BB424991-0B18-4FFC-965F-FCF4275F56C5"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:teamcenter:*:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "1B209EFE-77F2-48CD-A880-ABA0A0A81AB1"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:tracealertserverplus:*:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "6340621E-0FAF-4684-B457-E621E51E13A1"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:vesys:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "2019.1",
+                                        "matchCriteriaId": "72D238AB-4A1F-458D-897E-2C93DCD7BA6C"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:vesys:2019.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "9778339A-EA93-4D18-9A03-4EB4CBD25459"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:vesys:2019.1:-:*:*:*:*:*:*",
+                                        "matchCriteriaId": "1747F127-AB45-4325-B9A1-F3D12E69FFC8"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:vesys:2019.1:sp1912:*:*:*:*:*:*",
+                                        "matchCriteriaId": "18BBEF7C-F686-4129-8EE9-0F285CE38845"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:xpedition_enterprise:-:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "AD525494-2807-48EA-AED0-11B9CB5A6A9B"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:xpedition_package_integrator:-:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "1EDCBF98-A857-48BC-B04D-6F36A1975AA5"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:debian:debian_linux:10.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "07B237A9-69A3-4A9C-9DA0-4E06BD37AE73"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:debian:debian_linux:11.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "FA6FEEC2-9F11-4643-8827-749718254FED"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:sonicwall:email_security:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "10.0.12",
+                                        "matchCriteriaId": "B5BAA8A5-74B3-48EB-8287-302927197A4E"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:fedoraproject:fedora:34:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "A930E247-0B43-43CB-98FF-6CE7B8189835"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:fedoraproject:fedora:35:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "80E516C0-98A4-4ADE-B69F-66A772E2BAAA"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "operator": "AND",
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": false,
+                                        "criteria": "cpe:2.3:h:siemens:6bk1602-0aa12-0tp0:-:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "CF99FE8F-40D0-48A8-9A40-43119B259535"
+                                    }
+                                ]
+                            },
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:siemens:6bk1602-0aa12-0tp0_firmware:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "2.7.0",
+                                        "matchCriteriaId": "BD64FC36-CC7B-4FD7-9845-7EA1DDB0E627"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "operator": "AND",
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": false,
+                                        "criteria": "cpe:2.3:h:siemens:6bk1602-0aa22-0tp0:-:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "F3F61BCB-64FA-463C-8B95-8868995EDBC0"
+                                    }
+                                ]
+                            },
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:siemens:6bk1602-0aa22-0tp0_firmware:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "2.7.0",
+                                        "matchCriteriaId": "D0012304-B1C8-460A-B891-42EBF96504F5"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "operator": "AND",
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": false,
+                                        "criteria": "cpe:2.3:h:siemens:6bk1602-0aa32-0tp0:-:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "B5A189B7-DDBF-4B84-997F-637CEC5FF12B"
+                                    }
+                                ]
+                            },
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:siemens:6bk1602-0aa32-0tp0_firmware:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "2.7.0",
+                                        "matchCriteriaId": "B02BCF56-D9D3-4BF3-85A2-D445E997F5EC"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "operator": "AND",
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": false,
+                                        "criteria": "cpe:2.3:h:siemens:6bk1602-0aa42-0tp0:-:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "035AFD6F-E560-43C8-A283-8D80DAA33025"
+                                    }
+                                ]
+                            },
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:siemens:6bk1602-0aa42-0tp0_firmware:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "2.7.0",
+                                        "matchCriteriaId": "4A2DB5BA-1065-467A-8FB6-81B5EC29DC0C"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "operator": "AND",
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": false,
+                                        "criteria": "cpe:2.3:h:siemens:6bk1602-0aa52-0tp0:-:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "4594FF76-A1F8-4457-AE90-07D051CD0DCB"
+                                    }
+                                ]
+                            },
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:siemens:6bk1602-0aa52-0tp0_firmware:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "2.7.0",
+                                        "matchCriteriaId": "809EB87E-561A-4DE5-9FF3-BBEE0FA3706E"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://www.openwall.com/lists/oss-security/2021/12/14/4",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Mailing List",
+                            "Mitigation",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://www.openwall.com/lists/oss-security/2021/12/15/3",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Mailing List",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://www.openwall.com/lists/oss-security/2021/12/18/1",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Mailing List",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-397453.pdf",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-479842.pdf",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-661247.pdf",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-714170.pdf",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/EOKPQGV24RRBBI4TBZUDQMM4MEH7MXCY/",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Mailing List",
+                            "Release Notes"
+                        ]
+                    },
+                    {
+                        "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/SIG7FZULMNK2XF6FZRU4VWYDQXNMUGAJ/",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Mailing List",
+                            "Release Notes"
+                        ]
+                    },
+                    {
+                        "url": "https://logging.apache.org/log4j/2.x/security.html",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Mitigation",
+                            "Release Notes",
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2021-0032",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://security.gentoo.org/glsa/202310-16",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-apache-log4j-qRuKNEbd",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.cve.org/CVERecord?id=CVE-2021-44228",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Not Applicable"
+                        ]
+                    },
+                    {
+                        "url": "https://www.debian.org/security/2021/dsa-5022",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00646.html",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.kb.cert.org/vuls/id/930724",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Third Party Advisory",
+                            "US Government Resource"
+                        ]
+                    },
+                    {
+                        "url": "https://www.oracle.com/security-alerts/alert-cve-2021-44228.html",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.oracle.com/security-alerts/cpuapr2022.html",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.oracle.com/security-alerts/cpujan2022.html",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.oracle.com/security-alerts/cpujul2022.html",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        "repo_url": "https://github.com/apache/olingo-odata4",
+        "version_interval": "None:2.7.0"
+    }
+]

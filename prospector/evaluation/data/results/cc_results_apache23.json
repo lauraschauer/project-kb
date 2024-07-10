@@ -1,0 +1,4318 @@
+{
+    "vulnerabilities": [
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-43667": {
+                "relevance": [
+                    {
+                        "commit_hash": "a0477051320e5d74f20f0b8ee90785f41825ae5f",
+                        "relevance": 34,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6c8ebc32ad096da7d7cba54628db08ba92ade409",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5d1fae138a2a011724b02f55dbcb3502140f95c7",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ab7cf15639d15b7bddbc56111abe6925a8b550a3",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "295dfcb6a2d12353fc99cafc5ce97db34d0582f5",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-39913": {
+                "relevance": [
+                    {
+                        "commit_hash": "a0477051320e5d74f20f0b8ee90785f41825ae5f",
+                        "relevance": 46,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 22,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5d1fae138a2a011724b02f55dbcb3502140f95c7",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6c8ebc32ad096da7d7cba54628db08ba92ade409",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-39456": {
+                "relevance": [
+                    {
+                        "commit_hash": "6c8ebc32ad096da7d7cba54628db08ba92ade409",
+                        "relevance": 36,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "a0477051320e5d74f20f0b8ee90785f41825ae5f",
+                        "relevance": 34,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "5e696bc131dd97942101fa216e228d64991339c3",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5d1fae138a2a011724b02f55dbcb3502140f95c7",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-49070": {
+                "relevance": [
+                    {
+                        "commit_hash": "7daba341a2eb42925ca1eb0a42e3797c23c0a8d2",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ab7cf15639d15b7bddbc56111abe6925a8b550a3",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "20b0d7a2c0134d00cd86ef42545bf4af9b254d32",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "b9edb6bf942c8c0c1dd5e5f3d0705b96d252dd1f",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-49735": {
+                "relevance": [
+                    {
+                        "commit_hash": "b6871904ac1e59fa30abcbc789bdbb4c172616e2",
+                        "relevance": 50,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "5948974ad28271818e2afe747c71cde56a7f2c63",
+                        "relevance": 50,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "c3f982db3d97e395d313ae8f231202bb2139882c",
+                        "relevance": 50,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "eb112032ddc0fa5264b91811d8a5ce4020326d0f",
+                        "relevance": 50,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "15b6fa0d852747db5ffdbc99f89b76cd0c6a8361",
+                        "relevance": 20,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "f7e5a5c716821bb376ce1143b8b24e5ae1abd6b3",
+                        "relevance": 20,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "69659a1a9027d6eb8e758694be20fd8198197c91",
+                        "relevance": 18,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "aa8f2cfc2fc5e72343ef7aaf7f238f0d51289cc2",
+                        "relevance": 18,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7049f4ebf0021b7f13b6b9c46a334438bc3caa46",
+                        "relevance": 16,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "8f4e554dfacb5b152f7b0c24939f8336db810c61",
+                        "relevance": 16,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "",
+            "CVE-2023-1713": {
+                "relevance": [],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "",
+            "CVE-2023-26031": {
+                "relevance": [],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-46302": {
+                "relevance": [
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ac862fc48bdb7f4e2f764862b6d9ab7af4c731bc",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ce5028d24f220ad0f60b5ac023c10e7b88b7c806",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "1cb2907fccb06b66e026d3b1255e9b57449eec9b",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6c8ebc32ad096da7d7cba54628db08ba92ade409",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7e0637b2b7ca1d5e3c6848b725a7f2ec3649a533",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-51656": {
+                "relevance": [
+                    {
+                        "commit_hash": "7daba341a2eb42925ca1eb0a42e3797c23c0a8d2",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ab7cf15639d15b7bddbc56111abe6925a8b550a3",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "20b0d7a2c0134d00cd86ef42545bf4af9b254d32",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "b9edb6bf942c8c0c1dd5e5f3d0705b96d252dd1f",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "1575ab7089b3361b842550a8d583aba3aa674760",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-47248": {
+                "relevance": [
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ab7cf15639d15b7bddbc56111abe6925a8b550a3",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "20b0d7a2c0134d00cd86ef42545bf4af9b254d32",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "b9edb6bf942c8c0c1dd5e5f3d0705b96d252dd1f",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7daba341a2eb42925ca1eb0a42e3797c23c0a8d2",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "a42896f5eb3c34d733fa80c39e16edf63dd300c7",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-49145": {
+                "relevance": [
+                    {
+                        "commit_hash": "8d436ccd1dfcceb079ec9b6ac32c5587f52b0b0c",
+                        "relevance": 40,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "1cb2907fccb06b66e026d3b1255e9b57449eec9b",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7daba341a2eb42925ca1eb0a42e3797c23c0a8d2",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "a42896f5eb3c34d733fa80c39e16edf63dd300c7",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6c8ebc32ad096da7d7cba54628db08ba92ade409",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6de6d0ee9fce5163fcd9fddb5e69fd0bee862415",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "923b7a7178caf9b6d21a0907426b89e8e8bcfeb3",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-42504": {
+                "relevance": [
+                    {
+                        "commit_hash": "a0477051320e5d74f20f0b8ee90785f41825ae5f",
+                        "relevance": 34,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5d1fae138a2a011724b02f55dbcb3502140f95c7",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "295dfcb6a2d12353fc99cafc5ce97db34d0582f5",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ce5028d24f220ad0f60b5ac023c10e7b88b7c806",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7e0637b2b7ca1d5e3c6848b725a7f2ec3649a533",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-42663": {
+                "relevance": [
+                    {
+                        "commit_hash": "a0477051320e5d74f20f0b8ee90785f41825ae5f",
+                        "relevance": 34,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "e2e684794913793eac3534586e91852f054fd8f9",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6c8ebc32ad096da7d7cba54628db08ba92ade409",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5d1fae138a2a011724b02f55dbcb3502140f95c7",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "295dfcb6a2d12353fc99cafc5ce97db34d0582f5",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ce5028d24f220ad0f60b5ac023c10e7b88b7c806",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-46589": {
+                "relevance": [
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "20b0d7a2c0134d00cd86ef42545bf4af9b254d32",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ab7cf15639d15b7bddbc56111abe6925a8b550a3",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "b9edb6bf942c8c0c1dd5e5f3d0705b96d252dd1f",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7daba341a2eb42925ca1eb0a42e3797c23c0a8d2",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-42457": {
+                "relevance": [
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "1cb2907fccb06b66e026d3b1255e9b57449eec9b",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "e2e684794913793eac3534586e91852f054fd8f9",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7e0637b2b7ca1d5e3c6848b725a7f2ec3649a533",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6c8ebc32ad096da7d7cba54628db08ba92ade409",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ce5028d24f220ad0f60b5ac023c10e7b88b7c806",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "295dfcb6a2d12353fc99cafc5ce97db34d0582f5",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-49733": {
+                "relevance": [
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7daba341a2eb42925ca1eb0a42e3797c23c0a8d2",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ab7cf15639d15b7bddbc56111abe6925a8b550a3",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "20b0d7a2c0134d00cd86ef42545bf4af9b254d32",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "b9edb6bf942c8c0c1dd5e5f3d0705b96d252dd1f",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ce5028d24f220ad0f60b5ac023c10e7b88b7c806",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-37941": {
+                "relevance": [
+                    {
+                        "commit_hash": "5e696bc131dd97942101fa216e228d64991339c3",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-45303": {
+                "relevance": [
+                    {
+                        "commit_hash": "1cb2907fccb06b66e026d3b1255e9b57449eec9b",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "e2e684794913793eac3534586e91852f054fd8f9",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ab7cf15639d15b7bddbc56111abe6925a8b550a3",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6de6d0ee9fce5163fcd9fddb5e69fd0bee862415",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "923b7a7178caf9b6d21a0907426b89e8e8bcfeb3",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-46819": {
+                "relevance": [
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ab7cf15639d15b7bddbc56111abe6925a8b550a3",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "20b0d7a2c0134d00cd86ef42545bf4af9b254d32",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "b9edb6bf942c8c0c1dd5e5f3d0705b96d252dd1f",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7daba341a2eb42925ca1eb0a42e3797c23c0a8d2",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5d1fae138a2a011724b02f55dbcb3502140f95c7",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-48795": {
+                "relevance": [
+                    {
+                        "commit_hash": "a0477051320e5d74f20f0b8ee90785f41825ae5f",
+                        "relevance": 42,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "e2e684794913793eac3534586e91852f054fd8f9",
+                        "relevance": 16,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "1cb2907fccb06b66e026d3b1255e9b57449eec9b",
+                        "relevance": 14,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "20b0d7a2c0134d00cd86ef42545bf4af9b254d32",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ac862fc48bdb7f4e2f764862b6d9ab7af4c731bc",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5d1fae138a2a011724b02f55dbcb3502140f95c7",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-41267": {
+                "relevance": [
+                    {
+                        "commit_hash": "a0477051320e5d74f20f0b8ee90785f41825ae5f",
+                        "relevance": 34,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "ce5028d24f220ad0f60b5ac023c10e7b88b7c806",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "cbb7b31f6d29422c024fffb4ee6acf8ac6ecf1bf",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "417198580e56402c372ed6e154367255642407cd",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "e2e684794913793eac3534586e91852f054fd8f9",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5d1fae138a2a011724b02f55dbcb3502140f95c7",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "1cb2907fccb06b66e026d3b1255e9b57449eec9b",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ac862fc48bdb7f4e2f764862b6d9ab7af4c731bc",
+                        "relevance": 0,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-36387": {
+                "relevance": [
+                    {
+                        "commit_hash": "5e696bc131dd97942101fa216e228d64991339c3",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-39265": {
+                "relevance": [
+                    {
+                        "commit_hash": "a0477051320e5d74f20f0b8ee90785f41825ae5f",
+                        "relevance": 34,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "5e696bc131dd97942101fa216e228d64991339c3",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5d1fae138a2a011724b02f55dbcb3502140f95c7",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "",
+            "CVE-2023-25753": {
+                "relevance": [],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-48291": {
+                "relevance": [
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "20b0d7a2c0134d00cd86ef42545bf4af9b254d32",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ab7cf15639d15b7bddbc56111abe6925a8b550a3",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "b9edb6bf942c8c0c1dd5e5f3d0705b96d252dd1f",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7daba341a2eb42925ca1eb0a42e3797c23c0a8d2",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "e2e684794913793eac3534586e91852f054fd8f9",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-43826": {
+                "relevance": [
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ab7cf15639d15b7bddbc56111abe6925a8b550a3",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "e2e684794913793eac3534586e91852f054fd8f9",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "1cb2907fccb06b66e026d3b1255e9b57449eec9b",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-49068": {
+                "relevance": [
+                    {
+                        "commit_hash": "7daba341a2eb42925ca1eb0a42e3797c23c0a8d2",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ab7cf15639d15b7bddbc56111abe6925a8b550a3",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "20b0d7a2c0134d00cd86ef42545bf4af9b254d32",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "b9edb6bf942c8c0c1dd5e5f3d0705b96d252dd1f",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "",
+            "CVE-2023-3545": {
+                "relevance": [],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-46236": {
+                "relevance": [
+                    {
+                        "commit_hash": "1cb2907fccb06b66e026d3b1255e9b57449eec9b",
+                        "relevance": 18,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "20b0d7a2c0134d00cd86ef42545bf4af9b254d32",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ab7cf15639d15b7bddbc56111abe6925a8b550a3",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "b9edb6bf942c8c0c1dd5e5f3d0705b96d252dd1f",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7daba341a2eb42925ca1eb0a42e3797c23c0a8d2",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2022-45135": {
+                "relevance": [
+                    {
+                        "commit_hash": "e169bfba90e96b96ae292fa8c8dd3bb351626350",
+                        "relevance": 40,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "9d0b4cfa4354cca53ccb1146c9b1d42d991bdc10",
+                        "relevance": 36,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "9e739f91a1e681bb05a09f2ae44ba532e7b3cb2e",
+                        "relevance": 36,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "9a75d0bf30aaa6ae4514ef8c987a610767646a3b",
+                        "relevance": 36,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "8bd73adc77c6214f7d36e550e239678c4b2ad8bd",
+                        "relevance": 36,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "e1c107ef0ca5cce4a872d27168ba6234af9e7c3f",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "dc9816e4776bce74238bd16f32e63643255c5719",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "f4e46d2aa738aaf2ca2ea084ed7c896396349a72",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "e39c1deb58e43a0c726b97fa969d00af3972becd",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "532719421a2b32476c69eea99dcb355384082d08",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-31122": {
+                "relevance": [
+                    {
+                        "commit_hash": "5e696bc131dd97942101fa216e228d64991339c3",
+                        "relevance": 20,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-38156": {
+                "relevance": [
+                    {
+                        "commit_hash": "5e696bc131dd97942101fa216e228d64991339c3",
+                        "relevance": 0,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-39264": {
+                "relevance": [
+                    {
+                        "commit_hash": "a0477051320e5d74f20f0b8ee90785f41825ae5f",
+                        "relevance": 34,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "5e696bc131dd97942101fa216e228d64991339c3",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5d1fae138a2a011724b02f55dbcb3502140f95c7",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-50783": {
+                "relevance": [
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7daba341a2eb42925ca1eb0a42e3797c23c0a8d2",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "295dfcb6a2d12353fc99cafc5ce97db34d0582f5",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "20b0d7a2c0134d00cd86ef42545bf4af9b254d32",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ab7cf15639d15b7bddbc56111abe6925a8b550a3",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "b9edb6bf942c8c0c1dd5e5f3d0705b96d252dd1f",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "",
+            "CVE-2023-27523": {
+                "relevance": [],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "",
+            "CVE-2023-27526": {
+                "relevance": [],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-42780": {
+                "relevance": [
+                    {
+                        "commit_hash": "a0477051320e5d74f20f0b8ee90785f41825ae5f",
+                        "relevance": 34,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6c8ebc32ad096da7d7cba54628db08ba92ade409",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "e2e684794913793eac3534586e91852f054fd8f9",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5d1fae138a2a011724b02f55dbcb3502140f95c7",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "295dfcb6a2d12353fc99cafc5ce97db34d0582f5",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ce5028d24f220ad0f60b5ac023c10e7b88b7c806",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-43666": {
+                "relevance": [
+                    {
+                        "commit_hash": "6c8ebc32ad096da7d7cba54628db08ba92ade409",
+                        "relevance": 36,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ce5028d24f220ad0f60b5ac023c10e7b88b7c806",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "295dfcb6a2d12353fc99cafc5ce97db34d0582f5",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-45757": {
+                "relevance": [
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ab7cf15639d15b7bddbc56111abe6925a8b550a3",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "1cb2907fccb06b66e026d3b1255e9b57449eec9b",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "e2e684794913793eac3534586e91852f054fd8f9",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6c8ebc32ad096da7d7cba54628db08ba92ade409",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6de6d0ee9fce5163fcd9fddb5e69fd0bee862415",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-50968": {
+                "relevance": [
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "20b0d7a2c0134d00cd86ef42545bf4af9b254d32",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ab7cf15639d15b7bddbc56111abe6925a8b550a3",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "b9edb6bf942c8c0c1dd5e5f3d0705b96d252dd1f",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7daba341a2eb42925ca1eb0a42e3797c23c0a8d2",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ea4109a5886ec78b68ec4980a8597e17b7f4e927",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-47265": {
+                "relevance": [
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ab7cf15639d15b7bddbc56111abe6925a8b550a3",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "20b0d7a2c0134d00cd86ef42545bf4af9b254d32",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "b9edb6bf942c8c0c1dd5e5f3d0705b96d252dd1f",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7daba341a2eb42925ca1eb0a42e3797c23c0a8d2",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-49734": {
+                "relevance": [
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7daba341a2eb42925ca1eb0a42e3797c23c0a8d2",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "20b0d7a2c0134d00cd86ef42545bf4af9b254d32",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ab7cf15639d15b7bddbc56111abe6925a8b550a3",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "b9edb6bf942c8c0c1dd5e5f3d0705b96d252dd1f",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-46215": {
+                "relevance": [
+                    {
+                        "commit_hash": "7daba341a2eb42925ca1eb0a42e3797c23c0a8d2",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ab7cf15639d15b7bddbc56111abe6925a8b550a3",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "20b0d7a2c0134d00cd86ef42545bf4af9b254d32",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "b9edb6bf942c8c0c1dd5e5f3d0705b96d252dd1f",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-46104": {
+                "relevance": [
+                    {
+                        "commit_hash": "923b7a7178caf9b6d21a0907426b89e8e8bcfeb3",
+                        "relevance": 36,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ab7cf15639d15b7bddbc56111abe6925a8b550a3",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6de6d0ee9fce5163fcd9fddb5e69fd0bee862415",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "e2e684794913793eac3534586e91852f054fd8f9",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ce5028d24f220ad0f60b5ac023c10e7b88b7c806",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-46851": {
+                "relevance": [
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ab7cf15639d15b7bddbc56111abe6925a8b550a3",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "20b0d7a2c0134d00cd86ef42545bf4af9b254d32",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "b9edb6bf942c8c0c1dd5e5f3d0705b96d252dd1f",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "1cb2907fccb06b66e026d3b1255e9b57449eec9b",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7daba341a2eb42925ca1eb0a42e3797c23c0a8d2",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-46750": {
+                "relevance": [
+                    {
+                        "commit_hash": "a0477051320e5d74f20f0b8ee90785f41825ae5f",
+                        "relevance": 38,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "d533260a8c5f18f010ae76e4a521811b60bf08ea",
+                        "relevance": 36,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "1cb2907fccb06b66e026d3b1255e9b57449eec9b",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "295dfcb6a2d12353fc99cafc5ce97db34d0582f5",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5d1fae138a2a011724b02f55dbcb3502140f95c7",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6de6d0ee9fce5163fcd9fddb5e69fd0bee862415",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7daba341a2eb42925ca1eb0a42e3797c23c0a8d2",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-44483": {
+                "relevance": [
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ab7cf15639d15b7bddbc56111abe6925a8b550a3",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ac862fc48bdb7f4e2f764862b6d9ab7af4c731bc",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ce5028d24f220ad0f60b5ac023c10e7b88b7c806",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-42795": {
+                "relevance": [
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "e2e684794913793eac3534586e91852f054fd8f9",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6c8ebc32ad096da7d7cba54628db08ba92ade409",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ce5028d24f220ad0f60b5ac023c10e7b88b7c806",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "295dfcb6a2d12353fc99cafc5ce97db34d0582f5",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "a0477051320e5d74f20f0b8ee90785f41825ae5f",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-49736": {
+                "relevance": [
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7daba341a2eb42925ca1eb0a42e3797c23c0a8d2",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "20b0d7a2c0134d00cd86ef42545bf4af9b254d32",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ab7cf15639d15b7bddbc56111abe6925a8b550a3",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "b9edb6bf942c8c0c1dd5e5f3d0705b96d252dd1f",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-44981": {
+                "relevance": [
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ab7cf15639d15b7bddbc56111abe6925a8b550a3",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "e2e684794913793eac3534586e91852f054fd8f9",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "1cb2907fccb06b66e026d3b1255e9b57449eec9b",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6de6d0ee9fce5163fcd9fddb5e69fd0bee862415",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-40610": {
+                "relevance": [
+                    {
+                        "commit_hash": "a0477051320e5d74f20f0b8ee90785f41825ae5f",
+                        "relevance": 34,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ce5028d24f220ad0f60b5ac023c10e7b88b7c806",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "1cb2907fccb06b66e026d3b1255e9b57449eec9b",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5d1fae138a2a011724b02f55dbcb3502140f95c7",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "cbb7b31f6d29422c024fffb4ee6acf8ac6ecf1bf",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "e2e684794913793eac3534586e91852f054fd8f9",
+                        "relevance": 0,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ac862fc48bdb7f4e2f764862b6d9ab7af4c731bc",
+                        "relevance": 0,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6c8ebc32ad096da7d7cba54628db08ba92ade409",
+                        "relevance": 0,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "",
+            "CVE-2023-29234": {
+                "relevance": [],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-36388": {
+                "relevance": [
+                    {
+                        "commit_hash": "5e696bc131dd97942101fa216e228d64991339c3",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-42501": {
+                "relevance": [
+                    {
+                        "commit_hash": "a0477051320e5d74f20f0b8ee90785f41825ae5f",
+                        "relevance": 34,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "e2e684794913793eac3534586e91852f054fd8f9",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6c8ebc32ad096da7d7cba54628db08ba92ade409",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5d1fae138a2a011724b02f55dbcb3502140f95c7",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "295dfcb6a2d12353fc99cafc5ce97db34d0582f5",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-41180": {
+                "relevance": [
+                    {
+                        "commit_hash": "a0477051320e5d74f20f0b8ee90785f41825ae5f",
+                        "relevance": 34,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "417198580e56402c372ed6e154367255642407cd",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "e2e684794913793eac3534586e91852f054fd8f9",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6c8ebc32ad096da7d7cba54628db08ba92ade409",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ce5028d24f220ad0f60b5ac023c10e7b88b7c806",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "1cb2907fccb06b66e026d3b1255e9b57449eec9b",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5d1fae138a2a011724b02f55dbcb3502140f95c7",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2014-5329": {
+                "relevance": [
+                    {
+                        "commit_hash": "984ca3412b5fccc63c749b1a9f3fd8771e8342bf",
+                        "relevance": 58,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "16f35e90bd40f2115adb3eff0736b85cd56b5f05",
+                        "relevance": 34,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5af9f46d416d209125950b327149cd1892009c69",
+                        "relevance": 26,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "c541d9251b4ee36442cfdf9b18984892c1d2b819",
+                        "relevance": 26,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "c58109466fec654dde0b29567d2b213a90a57b80",
+                        "relevance": 26,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "0a80d5146b8946e1b87408e07ad00eed73b88f81",
+                        "relevance": 24,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "68f51d84d000f9475a74599ecfcce5af170f331e",
+                        "relevance": 22,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "633ef3221636223d476723135fa515ec6c257ac7",
+                        "relevance": 22,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "c155238d9cce9d1a2b170ac8a898b126b09c0f9a",
+                        "relevance": 22,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "188574f5c372bb95caca4a78d7cc10855947e5e1",
+                        "relevance": 22,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-43622": {
+                "relevance": [
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "e2e684794913793eac3534586e91852f054fd8f9",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "1cb2907fccb06b66e026d3b1255e9b57449eec9b",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6de6d0ee9fce5163fcd9fddb5e69fd0bee862415",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6c8ebc32ad096da7d7cba54628db08ba92ade409",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-36648": {
+                "relevance": [
+                    {
+                        "commit_hash": "5e696bc131dd97942101fa216e228d64991339c3",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-33972": {
+                "relevance": [
+                    {
+                        "commit_hash": "5e696bc131dd97942101fa216e228d64991339c3",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-46288": {
+                "relevance": [
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ab7cf15639d15b7bddbc56111abe6925a8b550a3",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "20b0d7a2c0134d00cd86ef42545bf4af9b254d32",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "b9edb6bf942c8c0c1dd5e5f3d0705b96d252dd1f",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7daba341a2eb42925ca1eb0a42e3797c23c0a8d2",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "e2e684794913793eac3534586e91852f054fd8f9",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-41752": {
+                "relevance": [
+                    {
+                        "commit_hash": "a0477051320e5d74f20f0b8ee90785f41825ae5f",
+                        "relevance": 34,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 20,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "417198580e56402c372ed6e154367255642407cd",
+                        "relevance": 20,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "e2e684794913793eac3534586e91852f054fd8f9",
+                        "relevance": 16,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "1cb2907fccb06b66e026d3b1255e9b57449eec9b",
+                        "relevance": 14,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6c8ebc32ad096da7d7cba54628db08ba92ade409",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ce5028d24f220ad0f60b5ac023c10e7b88b7c806",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5d1fae138a2a011724b02f55dbcb3502140f95c7",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-37924": {
+                "relevance": [
+                    {
+                        "commit_hash": "5e696bc131dd97942101fa216e228d64991339c3",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-42502": {
+                "relevance": [
+                    {
+                        "commit_hash": "a0477051320e5d74f20f0b8ee90785f41825ae5f",
+                        "relevance": 38,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5d1fae138a2a011724b02f55dbcb3502140f95c7",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "295dfcb6a2d12353fc99cafc5ce97db34d0582f5",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "1cb2907fccb06b66e026d3b1255e9b57449eec9b",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "e2e684794913793eac3534586e91852f054fd8f9",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ac862fc48bdb7f4e2f764862b6d9ab7af4c731bc",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-32672": {
+                "relevance": [
+                    {
+                        "commit_hash": "5e696bc131dd97942101fa216e228d64991339c3",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-46227": {
+                "relevance": [
+                    {
+                        "commit_hash": "a0477051320e5d74f20f0b8ee90785f41825ae5f",
+                        "relevance": 34,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "7daba341a2eb42925ca1eb0a42e3797c23c0a8d2",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6c8ebc32ad096da7d7cba54628db08ba92ade409",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5d1fae138a2a011724b02f55dbcb3502140f95c7",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ab7cf15639d15b7bddbc56111abe6925a8b550a3",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-37544": {
+                "relevance": [
+                    {
+                        "commit_hash": "5e696bc131dd97942101fa216e228d64991339c3",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-47804": {
+                "relevance": [
+                    {
+                        "commit_hash": "1cb2907fccb06b66e026d3b1255e9b57449eec9b",
+                        "relevance": 14,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7daba341a2eb42925ca1eb0a42e3797c23c0a8d2",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ab7cf15639d15b7bddbc56111abe6925a8b550a3",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "20b0d7a2c0134d00cd86ef42545bf4af9b254d32",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "b9edb6bf942c8c0c1dd5e5f3d0705b96d252dd1f",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-47037": {
+                "relevance": [
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7daba341a2eb42925ca1eb0a42e3797c23c0a8d2",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "295dfcb6a2d12353fc99cafc5ce97db34d0582f5",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "20b0d7a2c0134d00cd86ef42545bf4af9b254d32",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "a0477051320e5d74f20f0b8ee90785f41825ae5f",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-42794": {
+                "relevance": [
+                    {
+                        "commit_hash": "a0477051320e5d74f20f0b8ee90785f41825ae5f",
+                        "relevance": 34,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "e2e684794913793eac3534586e91852f054fd8f9",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ce5028d24f220ad0f60b5ac023c10e7b88b7c806",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6c8ebc32ad096da7d7cba54628db08ba92ade409",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5d1fae138a2a011724b02f55dbcb3502140f95c7",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-6710": {
+                "relevance": [
+                    {
+                        "commit_hash": "dba911f333c0dbe74fcb31c55076d7e145679010",
+                        "relevance": 40,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "b49a932bfedb0ad41f52c7d0b1801144184a607b",
+                        "relevance": 38,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "1cb2907fccb06b66e026d3b1255e9b57449eec9b",
+                        "relevance": 14,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5e696bc131dd97942101fa216e228d64991339c3",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "eb1a2d80f6a0fa3f6839f77f20d6897a3eb17797",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "c28e79077cf97179d0587d019bef7e211f7af149",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-42781": {
+                "relevance": [
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "e2e684794913793eac3534586e91852f054fd8f9",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6c8ebc32ad096da7d7cba54628db08ba92ade409",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ce5028d24f220ad0f60b5ac023c10e7b88b7c806",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "295dfcb6a2d12353fc99cafc5ce97db34d0582f5",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "a0477051320e5d74f20f0b8ee90785f41825ae5f",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-39410": {
+                "relevance": [
+                    {
+                        "commit_hash": "a0477051320e5d74f20f0b8ee90785f41825ae5f",
+                        "relevance": 38,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "5e696bc131dd97942101fa216e228d64991339c3",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5d1fae138a2a011724b02f55dbcb3502140f95c7",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6c8ebc32ad096da7d7cba54628db08ba92ade409",
+                        "relevance": 0,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-43668": {
+                "relevance": [
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6c8ebc32ad096da7d7cba54628db08ba92ade409",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ce5028d24f220ad0f60b5ac023c10e7b88b7c806",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "295dfcb6a2d12353fc99cafc5ce97db34d0582f5",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-43701": {
+                "relevance": [
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ce5028d24f220ad0f60b5ac023c10e7b88b7c806",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ab7cf15639d15b7bddbc56111abe6925a8b550a3",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6de6d0ee9fce5163fcd9fddb5e69fd0bee862415",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "923b7a7178caf9b6d21a0907426b89e8e8bcfeb3",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-46279": {
+                "relevance": [
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7daba341a2eb42925ca1eb0a42e3797c23c0a8d2",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "20b0d7a2c0134d00cd86ef42545bf4af9b254d32",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ab7cf15639d15b7bddbc56111abe6925a8b550a3",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "b9edb6bf942c8c0c1dd5e5f3d0705b96d252dd1f",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-6308": {
+                "relevance": [
+                    {
+                        "commit_hash": "923b7a7178caf9b6d21a0907426b89e8e8bcfeb3",
+                        "relevance": 36,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "8d436ccd1dfcceb079ec9b6ac32c5587f52b0b0c",
+                        "relevance": 36,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6de6d0ee9fce5163fcd9fddb5e69fd0bee862415",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7daba341a2eb42925ca1eb0a42e3797c23c0a8d2",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "a42896f5eb3c34d733fa80c39e16edf63dd300c7",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ce5028d24f220ad0f60b5ac023c10e7b88b7c806",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-40611": {
+                "relevance": [
+                    {
+                        "commit_hash": "a0477051320e5d74f20f0b8ee90785f41825ae5f",
+                        "relevance": 38,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "6c8ebc32ad096da7d7cba54628db08ba92ade409",
+                        "relevance": 36,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "5d1fae138a2a011724b02f55dbcb3502140f95c7",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "cbb7b31f6d29422c024fffb4ee6acf8ac6ecf1bf",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ac862fc48bdb7f4e2f764862b6d9ab7af4c731bc",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "e2e684794913793eac3534586e91852f054fd8f9",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ce5028d24f220ad0f60b5ac023c10e7b88b7c806",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "1cb2907fccb06b66e026d3b1255e9b57449eec9b",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-46237": {
+                "relevance": [
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ab7cf15639d15b7bddbc56111abe6925a8b550a3",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "20b0d7a2c0134d00cd86ef42545bf4af9b254d32",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "b9edb6bf942c8c0c1dd5e5f3d0705b96d252dd1f",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "1cb2907fccb06b66e026d3b1255e9b57449eec9b",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-42792": {
+                "relevance": [
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "e2e684794913793eac3534586e91852f054fd8f9",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6c8ebc32ad096da7d7cba54628db08ba92ade409",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ce5028d24f220ad0f60b5ac023c10e7b88b7c806",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "295dfcb6a2d12353fc99cafc5ce97db34d0582f5",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "a0477051320e5d74f20f0b8ee90785f41825ae5f",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-36419": {
+                "relevance": [
+                    {
+                        "commit_hash": "5e696bc131dd97942101fa216e228d64991339c3",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-43123": {
+                "relevance": [
+                    {
+                        "commit_hash": "ce5028d24f220ad0f60b5ac023c10e7b88b7c806",
+                        "relevance": 14,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 14,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6c8ebc32ad096da7d7cba54628db08ba92ade409",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "1cb2907fccb06b66e026d3b1255e9b57449eec9b",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7e0637b2b7ca1d5e3c6848b725a7f2ec3649a533",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ac862fc48bdb7f4e2f764862b6d9ab7af4c731bc",
+                        "relevance": 0,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-42505": {
+                "relevance": [
+                    {
+                        "commit_hash": "a0477051320e5d74f20f0b8ee90785f41825ae5f",
+                        "relevance": 34,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ce5028d24f220ad0f60b5ac023c10e7b88b7c806",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "295dfcb6a2d12353fc99cafc5ce97db34d0582f5",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7e0637b2b7ca1d5e3c6848b725a7f2ec3649a533",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "1cb2907fccb06b66e026d3b1255e9b57449eec9b",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-42503": {
+                "relevance": [
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 18,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ce5028d24f220ad0f60b5ac023c10e7b88b7c806",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "1cb2907fccb06b66e026d3b1255e9b57449eec9b",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "e2e684794913793eac3534586e91852f054fd8f9",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6c8ebc32ad096da7d7cba54628db08ba92ade409",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "295dfcb6a2d12353fc99cafc5ce97db34d0582f5",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-40743": {
+                "relevance": [
+                    {
+                        "commit_hash": "a0477051320e5d74f20f0b8ee90785f41825ae5f",
+                        "relevance": 34,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "1cb2907fccb06b66e026d3b1255e9b57449eec9b",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ac862fc48bdb7f4e2f764862b6d9ab7af4c731bc",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "cbb7b31f6d29422c024fffb4ee6acf8ac6ecf1bf",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ce5028d24f220ad0f60b5ac023c10e7b88b7c806",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5d1fae138a2a011724b02f55dbcb3502140f95c7",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6c8ebc32ad096da7d7cba54628db08ba92ade409",
+                        "relevance": 0,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "e2e684794913793eac3534586e91852f054fd8f9",
+                        "relevance": 0,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-41081": {
+                "relevance": [
+                    {
+                        "commit_hash": "a0477051320e5d74f20f0b8ee90785f41825ae5f",
+                        "relevance": 38,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5d1fae138a2a011724b02f55dbcb3502140f95c7",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "cbb7b31f6d29422c024fffb4ee6acf8ac6ecf1bf",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "e2e684794913793eac3534586e91852f054fd8f9",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ac862fc48bdb7f4e2f764862b6d9ab7af4c731bc",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6c8ebc32ad096da7d7cba54628db08ba92ade409",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ce5028d24f220ad0f60b5ac023c10e7b88b7c806",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "1cb2907fccb06b66e026d3b1255e9b57449eec9b",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-49920": {
+                "relevance": [
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7daba341a2eb42925ca1eb0a42e3797c23c0a8d2",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ab7cf15639d15b7bddbc56111abe6925a8b550a3",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "20b0d7a2c0134d00cd86ef42545bf4af9b254d32",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "b9edb6bf942c8c0c1dd5e5f3d0705b96d252dd1f",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "1575ab7089b3361b842550a8d583aba3aa674760",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-45648": {
+                "relevance": [
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ab7cf15639d15b7bddbc56111abe6925a8b550a3",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6c8ebc32ad096da7d7cba54628db08ba92ade409",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6de6d0ee9fce5163fcd9fddb5e69fd0bee862415",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "e2e684794913793eac3534586e91852f054fd8f9",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-45348": {
+                "relevance": [
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 12,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ab7cf15639d15b7bddbc56111abe6925a8b550a3",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "e2e684794913793eac3534586e91852f054fd8f9",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6c8ebc32ad096da7d7cba54628db08ba92ade409",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6de6d0ee9fce5163fcd9fddb5e69fd0bee862415",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "923b7a7178caf9b6d21a0907426b89e8e8bcfeb3",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-48796": {
+                "relevance": [
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7daba341a2eb42925ca1eb0a42e3797c23c0a8d2",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "05f865650ae29c7c6d14776e3e298efe2c44b539",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "20b0d7a2c0134d00cd86ef42545bf4af9b254d32",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ab7cf15639d15b7bddbc56111abe6925a8b550a3",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "b9edb6bf942c8c0c1dd5e5f3d0705b96d252dd1f",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-49299": {
+                "relevance": [
+                    {
+                        "commit_hash": "5f4df078950c0ba0adafbdc698dc41d33dec7cad",
+                        "relevance": 20,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "21ee56917f900a816b1dbae4d3683d5b84b00f67",
+                        "relevance": 20,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ae1c045dcd7012a24bf990210f0eb3ea99ed3c69",
+                        "relevance": 18,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7b8f05659e2654570ae9c09b2aa52238083ea02a",
+                        "relevance": 18,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "20b0d7a2c0134d00cd86ef42545bf4af9b254d32",
+                        "relevance": 18,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ab7cf15639d15b7bddbc56111abe6925a8b550a3",
+                        "relevance": 18,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "b9edb6bf942c8c0c1dd5e5f3d0705b96d252dd1f",
+                        "relevance": 18,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "e2e684794913793eac3534586e91852f054fd8f9",
+                        "relevance": 16,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "1cb2907fccb06b66e026d3b1255e9b57449eec9b",
+                        "relevance": 14,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7daba341a2eb42925ca1eb0a42e3797c23c0a8d2",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-40712": {
+                "relevance": [
+                    {
+                        "commit_hash": "6c8ebc32ad096da7d7cba54628db08ba92ade409",
+                        "relevance": 36,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "a0477051320e5d74f20f0b8ee90785f41825ae5f",
+                        "relevance": 34,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "1cb2907fccb06b66e026d3b1255e9b57449eec9b",
+                        "relevance": 10,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "cbb7b31f6d29422c024fffb4ee6acf8ac6ecf1bf",
+                        "relevance": 6,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "e2e684794913793eac3534586e91852f054fd8f9",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5d1fae138a2a011724b02f55dbcb3502140f95c7",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ce5028d24f220ad0f60b5ac023c10e7b88b7c806",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ac862fc48bdb7f4e2f764862b6d9ab7af4c731bc",
+                        "relevance": 0,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        },
+        {
+            "repository_url": "https://github.com/apache/olingo-odata4",
+            "CVE-2023-41834": {
+                "relevance": [
+                    {
+                        "commit_hash": "a0477051320e5d74f20f0b8ee90785f41825ae5f",
+                        "relevance": 34,
+                        "matched_llm_rule": "yes"
+                    },
+                    {
+                        "commit_hash": "cbb7b31f6d29422c024fffb4ee6acf8ac6ecf1bf",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "417198580e56402c372ed6e154367255642407cd",
+                        "relevance": 8,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6c8ebc32ad096da7d7cba54628db08ba92ade409",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "e2e684794913793eac3534586e91852f054fd8f9",
+                        "relevance": 4,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "5d1fae138a2a011724b02f55dbcb3502140f95c7",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "ce5028d24f220ad0f60b5ac023c10e7b88b7c806",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "7a50c58bf300ce387078fc18ce3381985aa79770",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "6a800beee37f10aa5c21087a2c213bd9a6996e10",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    },
+                    {
+                        "commit_hash": "1cb2907fccb06b66e026d3b1255e9b57449eec9b",
+                        "relevance": 2,
+                        "matched_llm_rule": "no"
+                    }
+                ],
+                "no_llm_rule_match": []
+            }
+        }
+    ]
+}
