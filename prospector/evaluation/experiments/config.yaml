@@ -350,7 +350,7 @@ delete_existing_raw: True # whether to overwrite an existing data file of the sa
 prospector_reports: "data_sources/reports/"
 
 # Where to write compilation results to (compilation == taking Prospector's results and compiling them into one file)
-analysis_results: "evaluation/data/results/no_cc_gt18.json" # for analysed data
+analysis_results: "evaluation/data/results/cc_gt18.json" # for analysed data
 
 
 # ## analyse.ipynb ##

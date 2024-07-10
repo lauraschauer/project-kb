@@ -1,12 +1,12 @@
 import json
 import os
 
-from evaluation.scripts.jobs import dispatch_jobs_to_queue
 from omegaconf import OmegaConf
 
+from evaluation.scripts.jobs import dispatch_jobs_to_queue
 from rules.rules import RULES_PHASE_1, RULES_PHASE_2
 
-config = OmegaConf.load("evaluation/experiments/commit_classification/config.yaml")
+config = OmegaConf.load("evaluation/experiments/config.yaml")
 # Set rules
 enabled_rules = []
 if "RULES_PHASE_1" in config.rules:
@@ -20,7 +20,7 @@ cves_to_dispatch = list(
 )
 print(len(cves_to_dispatch))
 # Dispatch jobs to prospector
-# dispatch_jobs_to_queue(cves=cves_to_dispatch, enabled_rules=enabled_rules)
+dispatch_jobs_to_queue(cves=cves_to_dispatch, enabled_rules=enabled_rules)
 
 # Analyse the created reports
 results = {"vulnerabilities": {}}  # The JSON template to save results to
