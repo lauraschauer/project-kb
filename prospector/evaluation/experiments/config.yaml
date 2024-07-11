@@ -336,7 +336,7 @@ cves: *gt18
 
 rules:
   - RULES_PHASE_1
-  # - RULES_PHASE_2
+  - RULES_PHASE_2
 
 # ## fetch.py ##
 # Where to write raw data to
@@ -347,10 +347,10 @@ delete_existing_raw: True # whether to overwrite an existing data file of the sa
 
 # ## compile_prospector_results.py ##
 # Where to find Prospector reports (should stay unchanged)
-prospector_reports: "data_sources/reports/"
+prospector_reports: "evaluation/data/reports/no_cc/"
 
 # Where to write compilation results to (compilation == taking Prospector's results and compiling them into one file)
-analysis_results: "evaluation/data/results/cc_gt18.json" # for analysed data
+analysis_results: "evaluation/data/results/no_cc_gt18.json" # for analysed data
 
 
 # ## analyse.ipynb ##
@@ -362,3 +362,6 @@ no_cc: "evaluation/data/results/no_cc_gt18.json"
 # First X candidates comparison to find out how accurate P is (without cc rule)
 ground_truth_2019: "evaluation/data/raw/groundtruth2019.json"
 no_cc_2019: "evaluation/data/results/no_cc_gt19.json"
+
+ground_truth_2018: "evaluation/data/raw/groundtruth2018.json"
+no_cc_2018: "evaluation/data/results/no_cc_gt18.json"
