@@ -60,6 +60,8 @@ prospector/.idea/*
 similarities.csv
 prospector/*.html
 prospector/*.json
+prospector/.venv
+prospector/evaluation
 requests-cache.sqlite
 prospector/output.png
 prospector/output.pstats
