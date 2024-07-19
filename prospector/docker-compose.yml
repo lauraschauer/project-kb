@@ -29,6 +29,7 @@ services:
       dockerfile: docker/worker/Dockerfile
     volumes:
       - ./data_sources/reports:/app/data_sources/reports
+      - ./evaluation/data/reports/:/app/evaluation/data/reports
     depends_on:
       - redis
     environment:
