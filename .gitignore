@@ -68,7 +68,7 @@ prospector/output.pstats
 prospector/kaybee-new-statements
 prospector/run.sh
 prospector/cve_data
-prospector/evaluation/data/reports/
+prospector/evaluation/data/
 .DS_Store
 kaybee/internal/reconcile/debug.test
 prospector/client/web/node-app/build
