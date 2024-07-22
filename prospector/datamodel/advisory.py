@@ -108,7 +108,7 @@ class AdvisoryRecord:
 
         # for k, v in self.references.items():
         #     print(k, v)
-        logger.debug("References: " + str(self.references))
+        # logger.debug("References: " + str(self.references))
 
         # TODO: I should extract interesting stuff from the references immediately ad maintain them just for a fast lookup
         logger.debug(f"Relevant references: {len(self.references)}")
@@ -131,7 +131,9 @@ class AdvisoryRecord:
 
     def parse_references_from_third_party(self):
         """Parse the references from third party sites"""
-        for ref in self.search_references_debian() + self.search_references_redhat():
+        for ref in (
+            self.search_references_debian() + self.search_references_redhat()
+        ):
             # self.references[ref] += 2
             self.references[self.extract_hashes(ref)] += 2
 
@@ -167,7 +169,9 @@ class AdvisoryRecord:
         # )
         self.versions = {
             "affected": [
-                item.get("versionEndIncluding", item.get("versionStartIncluding"))
+                item.get(
+                    "versionEndIncluding", item.get("versionStartIncluding")
+                )
                 for item in data["configurations"][0]["nodes"][0]["cpeMatch"]
             ],  # TODO: can return to tuples
             "fixed": [
@@ -178,14 +182,21 @@ class AdvisoryRecord:
         self.versions["affected"] = [
             v for v in self.versions["affected"] if v is not None
         ]
-        self.versions["fixed"] = [v for v in self.versions["fixed"] if v is not None]
+        self.versions["fixed"] = [
+            v for v in self.versions["fixed"] if v is not None
+        ]
 
     def get_fixing_commit(self) -> List[str]:
         self.references = dict(
-            sorted(self.references.items(), key=lambda item: item[1], reverse=True)
+            sorted(
+                self.references.items(), key=lambda item: item[1], reverse=True
+            )
         )
         limit = 0
-        while len([r for r in self.references.keys() if r.startswith("commit::")]) > 5:
+        while (
+            len([r for r in self.references.keys() if r.startswith("commit::")])
+            > 5
+        ):
             self.references = {
                 k: v
                 for k, v in self.references.items()
@@ -193,7 +204,9 @@ class AdvisoryRecord:
             }
             limit += 1
 
-        return [ref.split("::")[1] for ref in self.references if "commit::" in ref]
+        return [
+            ref.split("::")[1] for ref in self.references if "commit::" in ref
+        ]
 
     def search_references_debian(self) -> List[str]:
         url = "https://security-tracker.debian.org/tracker/"
@@ -221,7 +234,9 @@ class AdvisoryRecord:
 
         return []
 
-    def extract_hashes(self, reference: str, filter: bool = False) -> str | None:
+    def extract_hashes(
+        self, reference: str, filter: bool = False
+    ) -> str | None:
         if bool(re.search(r"a=commit;", reference)):
             return "commit::" + re.search(r";h=(\w{6,40})", reference).group(1)
 
@@ -258,12 +273,15 @@ class AdvisoryRecord:
         for field, key in timestamp_fields.items():
             timestamp = metadata.get(key)
             setattr(
-                self, field, int(isoparse(timestamp).timestamp()) if timestamp else None
+                self,
+                field,
+                int(isoparse(timestamp).timestamp()) if timestamp else None,
             )
         if not self.description:
             self.description = details["descriptions"][0]["value"]
         self.references = defaultdict(
-            int, {self.extract_hashes(r["url"]): 2 for r in details["references"]}
+            int,
+            {self.extract_hashes(r["url"]): 2 for r in details["references"]},
         )
 
 
@@ -290,7 +308,9 @@ def get_from_nvd(cve_id: str):
         headers = {"apiKey": NVD_API_KEY} if NVD_API_KEY else None
         params = {"cveId": cve_id}
 
-        response = requests.get(NVD_REST_ENDPOINT, headers=headers, params=params)
+        response = requests.get(
+            NVD_REST_ENDPOINT, headers=headers, params=params
+        )
 
         if response.status_code != 200:
             return None
@@ -314,7 +334,9 @@ def is_url_allowed(url: str) -> bool:
     return False
 
 
-def get_from_local(vuln_id: str, nvd_rest_endpoint: str = LOCAL_NVD_REST_ENDPOINT):
+def get_from_local(
+    vuln_id: str, nvd_rest_endpoint: str = LOCAL_NVD_REST_ENDPOINT
+):
     try:
         response = requests.get(nvd_rest_endpoint + vuln_id)
         if response.status_code != 200:
