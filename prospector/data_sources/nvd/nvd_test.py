@@ -1,8 +1,16 @@
-from data_sources.nvd.filter_entries import process_entries, retrieve_vulns
+from data_sources.nvd.filter_entries import (
+    process_entries,
+    retrieve_vulns,
+    save_vuln_to_db,
+)
 from data_sources.nvd.job_creation import enqueue_jobs
 
 # request new cves entries through NVD API and save to db
-cves = retrieve_vulns(7)
+cve_data = retrieve_vulns(7)
+
+# save to db
+save_vuln_to_db(cve_data)
+
 
 """with open("filtered_cves.json", "w") as outfile:
     json.dump(filtered_cves, outfile)"""

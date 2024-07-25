@@ -2,7 +2,9 @@ import asyncio
 import csv
 import datetime
 import json
+from typing import Any, List
 
+Any,
 import aiofiles
 import aiohttp
 import psycopg2
@@ -43,8 +45,17 @@ def disconnect_from_database(db):
     db.disconnect()
 
 
-async def retrieve_vulns(d_time):
-    start_date, end_date = get_time_range(d_time)
+async def retrieve_vulns(past_days_range: int):
+    """Retrieve advisory data from the NVD.
+
+    Params:
+        past_days_range (int): How many days in the past the time range of
+        retrieved CVEs starts.
+
+    Returns:
+        The raw data from the NVD database.
+    """
+    start_date, end_date = get_time_range(past_days_range)
 
     data = ""
     # Set up the URL to retrieve the latest CVE entries from NVD
@@ -65,13 +76,12 @@ async def retrieve_vulns(d_time):
                 "Error while retrieving vulnerabilities from NVD", exc_info=True
             )
 
-    # save to db
-    save_vuln_to_db(data)
-
     return data
 
 
-def save_vuln_to_db(vulns):
+def save_vuln_to_db(vulns: List[Any]):
+    """Saves raw advisory data to the database for a list of advisories as
+    obtained from the NVD database."""
     db = connect_to_db()
     for vuln in vulns["vulnerabilities"]:
         vuln_id = vuln["cve"]["id"]
@@ -79,7 +89,9 @@ def save_vuln_to_db(vulns):
         mod_date = vuln["cve"]["lastModified"]
         raw_record = json.dumps(vuln)
         source = "NVD"
-        url = f"https://services.nvd.nist.gov/rest/json/cves/2.0?cveID={vuln_id}"
+        url = (
+            f"https://services.nvd.nist.gov/rest/json/cves/2.0?cveID={vuln_id}"
+        )
 
         res = db.lookup_vuln_id(vuln_id, mod_date)
         if res[0] == 0:
@@ -100,7 +112,9 @@ async def get_cve_by_id(id):
                     print("Error while trying to retrieve entry")
         except aiohttp.ClientError as e:
             print(str(e))
-            logger.error("Error while retrieving vulnerability from NVD", exc_info=True)
+            logger.error(
+                "Error while retrieving vulnerability from NVD", exc_info=True
+            )
     return data
 
 
@@ -124,7 +138,11 @@ def csv_to_json(csv_file_path):
         # Loop through the rows of the file
         for row in csv_reader:
             # Create a dictionary for the row data
-            row_data = {"project": row[0], "service_name": row[1], "repository": row[2]}
+            row_data = {
+                "project": row[0],
+                "service_name": row[1],
+                "repository": row[2],
+            }
             data.append(row_data)
     # Convert to JSON object
     json_data = json.dumps(data)
@@ -158,7 +176,9 @@ async def process_entries():
         if processed_vuln is not None:
             processed_vulns.append(processed_vuln)
             db.save_processed_vuln(
-                entry_id, processed_vuln["repo_url"], processed_vuln["version_interval"]
+                entry_id,
+                processed_vuln["repo_url"],
+                processed_vuln["version_interval"],
             )
     db.disconnect()
     return processed_vulns
