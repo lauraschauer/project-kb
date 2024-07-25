@@ -116,7 +116,7 @@ def prospector(  # noqa: C901
     fixing_commit = advisory_record.get_fixing_commit()
     # print(advisory_record.references)
     # obtain a repository object
-    repository = Git(repository_url, git_cache)
+    repository = Git(repository_url, cache_path=git_cache)
 
     with ConsoleWriter("Git repository cloning") as console:
         logger.debug(
