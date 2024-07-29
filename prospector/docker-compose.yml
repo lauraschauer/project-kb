@@ -37,7 +37,7 @@ services:
     environment:
       LOG_LEVEL: debug
       PIP_REQUIREMENTS: requirements.txt
-      GIT_CACHE: /tmp
+      GIT_CACHE: /tmp/gitcache
 
   db:
     image: postgres
