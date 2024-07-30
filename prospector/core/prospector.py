@@ -167,9 +167,7 @@ def prospector(  # noqa: C901
             f"Number of candidates exceeds {limit_candidates}, aborting."
         )
 
-        ConsoleWriter.print(
-            f"Candidates limitlimit exceeded: {len(candidates)}."
-        )
+        ConsoleWriter.print(f"Candidates limit exceeded: {len(candidates)}.")
         return None, len(candidates)
 
     with ExecutionTimer(
