@@ -72,3 +72,4 @@ prospector/evaluation/data/
 .DS_Store
 kaybee/internal/reconcile/debug.test
 prospector/client/web/node-app/build
+prospector/evaluation/ancient.py
