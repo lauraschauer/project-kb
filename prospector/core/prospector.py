@@ -119,7 +119,7 @@ def prospector(  # noqa: C901
     repository = Git(repository_url, cache_path=git_cache)
 
     with ConsoleWriter("Git repository cloning") as console:
-        repository.clone(skip_existing=True)
+        repository.clone()
 
         tags = repository.get_tags()
 
@@ -168,7 +168,7 @@ def prospector(  # noqa: C901
         )
 
         ConsoleWriter.print(f"Candidates limit exceeded: {len(candidates)}.")
-        return None, len(candidates)
+        raise Exception(f"Candidate limit exceeded: {len(candidates)}.")
 
     with ExecutionTimer(
         core_statistics.sub_collection("commit preprocessing")
@@ -223,7 +223,7 @@ def prospector(  # noqa: C901
                 elapsed_time = time.time() - start_time
                 if elapsed_time > 1800:
                     logger.error("Processing timeout")
-                    return None, len(candidates)
+                    raise Exception("Processing timeout")
 
             else:
                 writer.print("\nAll commits found in the backend")
