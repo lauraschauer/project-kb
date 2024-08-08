@@ -187,6 +187,13 @@ class AdvisoryRecord:
         ]
 
     def get_fixing_commit(self) -> List[str]:
+        """Processes the advisory's references to extract commit IDs if
+        present. Only keeps the five most important ones.
+
+        Returns:
+            A list of references to a commit.
+        """
+        # Sort the references so that more often mentioned ones come first
         self.references = dict(
             sorted(
                 self.references.items(), key=lambda item: item[1], reverse=True

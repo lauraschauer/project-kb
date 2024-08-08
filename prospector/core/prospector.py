@@ -113,7 +113,7 @@ def prospector(  # noqa: C901
                     )
                     sys.exit(1)
 
-    fixing_commit = advisory_record.get_fixing_commit()
+    commits_in_advisory_references = advisory_record.get_fixing_commit()
     # print(advisory_record.references)
     # obtain a repository object
     repository = Git(repository_url, cache_path=git_cache)
@@ -128,10 +128,12 @@ def prospector(  # noqa: C901
 
     candidates: Dict[str, RawCommit] = dict()
 
-    if len(fixing_commit) > 0:
-        candidates = get_commits_no_tags(repository, fixing_commit)
+    if len(commits_in_advisory_references) > 0:
+        candidates = get_commits_no_tags(
+            repository, commits_in_advisory_references
+        )
         if len(candidates) > 0 and any(
-            [c for c in candidates if c in fixing_commit]
+            [c for c in candidates if c in commits_in_advisory_references]
         ):
             console.print("Fixing commit found in the advisory references\n")
             advisory_record.has_fixing_commit = True
