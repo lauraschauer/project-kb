@@ -211,8 +211,12 @@ class AdvisoryRecord:
             }
             limit += 1
 
+        # Filter out references that are not commit hashes, eg. commit::master
+        hex_pattern = re.compile(r"^[a-fA-F0-9]+$")
         return [
-            ref.split("::")[1] for ref in self.references if "commit::" in ref
+            ref.split("::")[1]
+            for ref in self.references
+            if "commit::" in ref and bool(hex_pattern.match(ref))
         ]
 
     def search_references_debian(self) -> List[str]:
